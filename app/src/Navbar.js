@@ -31,8 +31,12 @@ function Navbar() {
 
   const handleCloseNavMenu = (pagename) => {
     pagename = pagename.toLowerCase();
+    console.log(pagename + "nimama")
     navigate("/" + pagename);
     //setAnchorElNav(null);
+  };
+  const handleCloseWhenClickingAway = () => {
+    setAnchorElNav(null);
   };
 
   const handleCloseUserMenu = () => {
@@ -86,7 +90,7 @@ function Navbar() {
                 horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              onClose={handleCloseWhenClickingAway}
               sx={{
                 display: { xs: "block", md: "none" },
               }}

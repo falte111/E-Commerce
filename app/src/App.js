@@ -10,14 +10,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Blog from "./About";
 
 function App() {
-  const containerStyle = {
-    width: "100vw",
-    height: "100vh",
-    backgroundImage: `url(${require("./resource/musicbg.jpg")})`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  };
+  // const containerStyle = {
+  //   width: "100vw",
+  //   height: "100vh",
+  //   backgroundImage: `url(${require("./resource/musicbg.jpg")})`,
+  //   backgroundPosition: "center",
+  //   backgroundSize: "cover",
+  //   backgroundRepeat: "no-repeat",
+  // };
   return (
     // <div className="App" style={containerStyle}>
     //   <Navbar></Navbar>
