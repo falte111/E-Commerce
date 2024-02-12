@@ -44,7 +44,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{background:"#282424"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -126,6 +126,7 @@ function Navbar() {
               <Button
                 key={page}
                 onClick={() => handleCloseNavMenu(page)}
+                on
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
