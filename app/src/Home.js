@@ -5,23 +5,41 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Navbar from "./Navbar";
 import background from "./resource/musicbg.jpg";
+import background2 from "./resource/pianoplaying.jpg"
+import background3 from "./resource/pianobook.jpg"
 import { Grid } from "@mui/material";
-import { yellow } from "@mui/material/colors";
+import React, { useState, useEffect } from 'react';
+import './BackgroundChanger.css'; 
 
 function Home() {
-  const containerStyle = {
-  
-    width: "100%",
-    // '@media (min-width: 780px)': {
-    //   width: '80%'
-    // },
-    height: "auto",
-    backgroundImage: `url(${require("./resource/musicbg.jpg")})`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+  const backgroundimages =[
+    background,
+    background2,
+    background3
+  ]
+  const [backgroundimageused, setBackGroundImageUsed] = useState(0);
 
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBackGroundImageUsed(prevIndex => (prevIndex + 1) % backgroundimages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [backgroundimages.length]);
+
+  // const containerStyle = {
+  
+  //   width: "100%",
+  //   // '@media (min-width: 780px)': {
+  //   //   width: '80%'
+  //   // },
+  //   height: "auto",
+  //   backgroundImage: `url(${(backgroundimages[backgroundimageused])})`,
+  //   backgroundPosition: "center",
+  //   backgroundSize: "cover",
+  //   backgroundRepeat: "no-repeat",
+
+  // };
 
  const buttonStyle = {
     backgroundColor:"#fff474",
@@ -32,7 +50,7 @@ function Home() {
   return (
     <div>
       <Navbar></Navbar>
-      <Grid className="innerDivHome" style={containerStyle}>
+      <Grid className="background-container" style={{backgroundImage: `url(${(backgroundimages[backgroundimageused])})`}}>
         <div className="homeText"  style={{
         display: 'flex',
         alignItems: 'center',
