@@ -8,6 +8,7 @@ import Home from "./Home";
 import Pricing from "./Pricing";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Blog from "./About";
+import BookTrial from "./BookTrial";
 
 function App() {
   // const containerStyle = {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/home" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/booktrial" element={<BookTrial/>}/>
       </Routes>
     </Router>
   );
