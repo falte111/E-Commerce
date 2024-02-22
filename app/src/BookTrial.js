@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import { Grid, TextField } from "@mui/material";
+import { Grid, TextField, Toolbar } from "@mui/material";
 import { MuiTelInput } from 'mui-tel-input'
 import { useState } from "react";
 function BookTrial() {
@@ -33,9 +33,8 @@ function BookTrial() {
   justifyContent="center"
   sx={{ minHeight: '40vh' }}>
     <Grid>
-      <Navbar></Navbar>
+      <Toolbar><Navbar></Navbar></Toolbar>
     <div style={{maxWidth:"70%", paddingBottom:"2%"}}>
-            <h1>Book Online</h1>
             <h1>Book Online</h1>
             <h3>Experience the difference at Quindicesima, where your unique talents and goals are nurtured and celebrated.
 ‍</h3>
