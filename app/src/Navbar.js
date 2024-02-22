@@ -44,10 +44,12 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" style={{background:"#282424"}}>
+    // <AppBar position="static" style={{background:"#282424"}}>
+    //Adding position = "static" will cause the appbar to not scale with the screen size
+    <AppBar style={{background:"#282424"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: "none", md: "flex-grow" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
