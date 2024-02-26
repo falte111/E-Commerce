@@ -2,7 +2,9 @@ import Navbar from "./Navbar";
 import { Grid, TextField, Toolbar } from "@mui/material";
 import { MuiTelInput } from 'mui-tel-input'
 import { useState } from "react";
+import axios from "axios";
 function BookTrial() {
+    const API_URL = "http://localhost:8080";
     const [value, setValue] = useState('+65')
     const handleChange = (newValue) => {
         setValue(newValue)
@@ -17,6 +19,7 @@ function BookTrial() {
           contactNumber: e.target.contactNumberInput.value,
           email: e.target.emailInput.value
         }
+        axios.post(API_URL+"/booktrial" , userParticulars)
     }
     const buttonStyle = {
         backgroundColor:"#a054e4",
@@ -32,8 +35,9 @@ function BookTrial() {
   alignItems="center"
   justifyContent="center"
   sx={{ minHeight: '40vh' }}>
-    <Grid>
-      <Toolbar><Navbar></Navbar></Toolbar>
+    <Grid item lg={12} md={12} xs={12}><Toolbar><Navbar></Navbar></Toolbar></Grid>
+    <Grid item lg={12} md={12} xs={12}>
+      {/* <Toolbar><Navbar></Navbar></Toolbar> */}
     <div style={{maxWidth:"70%", paddingBottom:"2%"}}>
             <h1>Book Online</h1>
             <h3>Experience the difference at Quindicesima, where your unique talents and goals are nurtured and celebrated.
