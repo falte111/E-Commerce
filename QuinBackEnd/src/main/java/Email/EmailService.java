@@ -50,7 +50,9 @@ public class EmailService {
 				message.setSubject("Registration Received");
 				message.setFrom("jianzhong.heng@gmail.com"); // could be parameterized...
 				Map model = new HashMap();
-				model.put("firstname", person.getFirstName());
+				String upperCaseFirstName= person.getFirstName().toUpperCase();
+				String modifiedString = upperCaseFirstName.replace("", " ").trim() + "!";
+				model.put("firstname", modifiedString);
 				String text = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine,
 						"src/main/resources/registration-confirmation.vm", model);
 				message.setText(text, true);

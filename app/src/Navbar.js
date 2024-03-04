@@ -13,6 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Navigate, useNavigate } from "react-router-dom";
+import logo from "./resource/QLogo.png"
 
 const pages = ["Home", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -49,7 +50,7 @@ function Navbar() {
     <AppBar style={{background:"#282424"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex-grow" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex-grow" }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -65,7 +66,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            <img src={logo} style={{maxWidth:"70px"}}></img>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -104,7 +105,9 @@ function Navbar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
+          {/* <Box component="img" sx={{ display: { xs: "flex", md: "none" }, mr: 1,  maxWidth:"70px"}} src={logo}></Box> */}
+          {/* <img src={logo} style={{maxWidth:"70px"}}></img> */}
           <Typography
             variant="h5"
             noWrap
@@ -121,7 +124,8 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            <img src={logo} style={{maxWidth:"70px"}}></img>
+            {/* LOGO */}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
