@@ -2,6 +2,8 @@ import Navbar from "./Navbar";
 import { Grid, TextField, Toolbar } from "@mui/material";
 import { MuiTelInput } from 'mui-tel-input'
 import { useState } from "react";
+import PlaceIcon from '@mui/icons-material/Place';
+import PhoneIcon from '@mui/icons-material/Phone';
 import axios from "axios";
 function BookTrial() {
     const API_URL = "http://localhost:8080";
@@ -90,8 +92,29 @@ function BookTrial() {
           </div>
           <div><button  type ="submit" style={buttonStyle}><span style={{color:"white", fontFamily:"Droid Sans"}}>SUBMIT</span></button></div>
           </form>
+          <Grid item lg={12} md={12} xs={12}>
+          <div><h1>Address</h1></div>
+          <div>
+          <PlaceIcon color="action"></PlaceIcon> <text>36 Toa Payoh, #11-341, Singapore, Singapore</text></div>
+  <div><PhoneIcon color = "action"></PhoneIcon><text>+65 9145 0050</text></div>
           </Grid>
+          </Grid>
+
         </Grid>
+        
+        {/* <Grid container spacing={0}
+          direction="row"
+          alignItems="center"
+          justifyContent="center"
+        >
+        <Grid item lg={6} md={6} xs={6}>
+          <div><h1>Address</h1></div>
+          <div>
+          <PlaceIcon color="action"></PlaceIcon> <text>36 Toa Payoh, #11-341, Singapore, Singapore</text></div>
+  <div><PhoneIcon color = "action"></PhoneIcon><text>+65 9145 0050</text></div>
+
+        </Grid>
+        </Grid> */}
         </div>
     )
     }

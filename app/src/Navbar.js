@@ -15,8 +15,8 @@ import AdbIcon from "@mui/icons-material/Adb";
 import { Navigate, useNavigate } from "react-router-dom";
 import logo from "./resource/QLogo.png"
 
-const pages = ["Home", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = ["Home", "Courses", "Blog"];
+//const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

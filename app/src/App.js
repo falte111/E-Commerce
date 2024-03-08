@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Cards from "./Cards";
 import About from "./About";
 import Home from "./Home";
-import Pricing from "./Pricing";
+import Courses from "./Courses";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Blog from "./About";
 import BookTrial from "./BookTrial";
@@ -27,7 +27,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/courses" element={<Courses />} />
         <Route path="/home" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/booktrial" element={<BookTrial/>}/>
