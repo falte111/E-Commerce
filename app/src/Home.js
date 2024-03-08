@@ -24,7 +24,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setBackGroundImageUsed(prevIndex => (prevIndex + 1) % backgroundimages.length);
-    }, 4000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [backgroundimages.length]);
