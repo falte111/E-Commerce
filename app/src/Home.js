@@ -8,10 +8,12 @@ import Navbar from "./Navbar";
 import background from "./resource/musicbg.jpg";
 import background2 from "./resource/pianoplaying.jpg"
 import background3 from "./resource/trumpet.jpg"
+import classroom from "./resource/classroom.jpg"
 import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg"
 import { Grid } from "@mui/material";
 import React, { useState, useEffect } from 'react';
 import './BackgroundChanger.css'; 
+import Divider from '@mui/material/Divider';
 
 function Home() {
   const backgroundimages =[
@@ -53,7 +55,7 @@ function Home() {
     
     <div>
       <Navbar></Navbar>
-      <Grid className="background-container" style={{backgroundImage: `url(${(backgroundimages[backgroundimageused])})`}}>
+      <Grid className="background-container" style={{backgroundImage: `url(${(backgroundimages[backgroundimageused])})`, backgroundRepeat:"no-repeat"}}>
         <div className="homeText"  style={{
         display: 'flex',
         alignItems: 'center',
@@ -68,7 +70,22 @@ function Home() {
         </div>
         <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
       </Grid>
-      
+      {/* Line break by adding br tag to separate background and contents */}
+      <br/> 
+      <Divider/>
+
+      <Grid className="content-section" container  direction="column"
+  alignItems="center"
+  justifyContent="center">
+        <Grid item>
+          <div>
+          <h1>ACADEMY</h1>
+          {/* https://stackoverflow.com/questions/66226603/how-to-fit-images-to-different-screen-resolutions */}
+          <img src={classroom} style={{maxWidth:"100%"}}></img>
+          </div>
+        
+        </Grid>
+      </Grid>
     </div>
     
   );
