@@ -8,6 +8,10 @@ import Navbar from "./Navbar";
 import background from "./resource/musicbg.jpg";
 import background2 from "./resource/pianoplaying.jpg"
 import background3 from "./resource/trumpet.jpg"
+import orchestral1 from "./resource/orchestral1.jpg"
+import orchestral2 from "./resource/orchestral2.jpg"
+import orchestral3 from "./resource/orchestral3.jpg"
+import orchestral4 from "./resource/orchestral4.jpg"
 import classroom from "./resource/classroom.jpg"
 import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg"
 import { Grid } from "@mui/material";
@@ -22,6 +26,14 @@ function Home() {
     background2,
     background3
   ]
+
+  const orchestralimages=[
+    orchestral1,
+    orchestral2,
+    orchestral3,
+    orchestral4
+  ]
+
   const [backgroundimageused, setBackGroundImageUsed] = useState(0);
   const navigate = useNavigate();
   useEffect(() => {
@@ -75,12 +87,12 @@ function Home() {
       <br/> 
       <Divider/>
 
-      <Grid className="content-section" container  direction="column"
+      <Grid className="musiceducation-section" container  direction="column"
   alignItems="center"
   justifyContent="center">
         <Grid item>
           <div className="container">
-          <h1 style={{textAlign:"center"}}>ACADEMY</h1>
+          <h1 style={{textAlign:"center"}}>MUSIC EDUCATION</h1>
           {/* https://stackoverflow.com/questions/66226603/how-to-fit-images-to-different-screen-resolutions */}
           <a href="http://localhost:3000/courses">
           <img className="image" src={classroom} style={{maxwidth:"100%" , height:"600px"}}></img>
@@ -89,9 +101,34 @@ function Home() {
   </div>
   </a>
           </div>
-        
         </Grid>
       </Grid>
+<br/>
+<Divider/>
+<Grid className="orchestral-section" container direction= "row" alignItems="center"  justifyContent="center">
+  <div>
+    <h1 style={{textAlign:"center"}}>ORCHESTRAL</h1>
+    <Grid container spacing={2}>
+    {orchestralimages.map(orchestralimage=>(
+      <Grid item>
+        <Card>
+      <CardMedia sx={{ height: 400, width:400 }}
+       image ={orchestralimage}/>
+      <CardContent>
+        <h1>
+          Lizard
+        </h1>
+      </CardContent>
+        </Card>
+      </Grid>
+
+    ))
+    }
+    </Grid>
+  </div>
+
+</Grid>
+
     </div>
     
   );
