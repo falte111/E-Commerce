@@ -19,6 +19,7 @@ import React, { useState, useEffect } from 'react';
 import './BackgroundChanger.css'; 
 import './imagehover.css'
 import Divider from '@mui/material/Divider';
+import ImageSlideShow from "./ImageSlideShow";
 
 function Home() {
   const backgroundimages =[
@@ -107,23 +108,9 @@ function Home() {
 <Divider/>
 <Grid className="orchestral-section" container direction= "row" alignItems="center"  justifyContent="center">
   <div>
+    <Grid item>
     <h1 style={{textAlign:"center"}}>ORCHESTRAL</h1>
-    <Grid container spacing={2}>
-    {orchestralimages.map(orchestralimage=>(
-      <Grid item>
-        <Card>
-      <CardMedia sx={{ height: 400, width:400 }}
-       image ={orchestralimage}/>
-      <CardContent>
-        <h1>
-          Lizard
-        </h1>
-      </CardContent>
-        </Card>
-      </Grid>
-
-    ))
-    }
+    <ImageSlideShow></ImageSlideShow>
     </Grid>
   </div>
 
