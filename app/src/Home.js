@@ -85,15 +85,17 @@ function Home() {
       </Grid>
       <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
       {/* Line break by adding br tag to separate background and contents */}
-      <br/> 
+      <div style={{marginBottom:"400px"}}></div>
       <Divider/>
+      <p style={{textAlign:"center", fontSize:"50px"}}>MUSIC EDUCATION</p>
+      <Grid className="musiceducation-section" container  direction="row" spacing={4}
+  >     
+        {/* Empty grid item to push the image to the center */}
+        <Grid item xl = {2} lg={1} md= {1} sm= {1} xs={0}></Grid>
 
-      <Grid className="musiceducation-section" container  direction="column"
-  alignItems="center"
-  justifyContent="center">
-        <Grid item>
+        <Grid item xl={3} lg={4} md = {4} sm={11} xs ={12}>
           <div className="container">
-          <h1 style={{textAlign:"center"}}>MUSIC EDUCATION</h1>
+          
           {/* https://stackoverflow.com/questions/66226603/how-to-fit-images-to-different-screen-resolutions */}
           <a href="http://localhost:3000/courses">
           <img className="image" src={classroom} style={{maxwidth:"100%" , height:"600px"}}></img>
@@ -103,13 +105,19 @@ function Home() {
   </a>
           </div>
         </Grid>
+        <Grid item  xl={7} lg={7} md={7} sm ={12} xs ={12}>
+          <div>
+            <p style={{fontSize:"30px"}}>Lorem ipsum dolor sit amet,  molestie et nunc. Praesent interdum ultricifaucibus orci luctus et  egestas eleifend dui eu vestibulum. In id imperdiet ipsum, eget porta turpis. Phasellus pulvinar tellus nec justo mollis, sollicitudin aliquet leo ullamcorper. Nunc dui leo, tincidunt non urna sit amet, euismod rhoncus sapien. Fusce bibendum rutrum diam id sollicitudin.</p>
+          </div>
+
+        </Grid>
       </Grid>
 <br/>
 <Divider/>
 <Grid className="orchestral-section" container direction= "row" alignItems="center"  justifyContent="center">
   <div>
     <Grid item>
-    <h1 style={{textAlign:"center"}}>ORCHESTRAL</h1>
+    <p style={{textAlign:"center", fontSize:"50px"}}>ORCHESTRAL</p>
     <ImageSlideShow></ImageSlideShow>
     </Grid>
   </div>
