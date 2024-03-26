@@ -43,27 +43,33 @@ function Home() {
 
   const productsJson=[
     {
+      "title": "Piano",
       "image": piano,
       "url" : "http://localhost:3000/products"
     },
 
     {
+      "title": "Strings",
       "image": strings,
       "url" : "http://localhost:3000/products"
     },
-    {
+    { 
+      "title": "Percussion",
       "image": percussion,
       "url": "http://localhost:3000/products"
     },
-    {
+    { 
+      "title": "Woodwind",
       "image": woodwind,
       "url" : "http://localhost:3000/products"
     },
     {
+      "title": "Brass",
       "image": brass,
       "url" : "http://localhost:3000/products"
     },
     {
+      "title": "Audio Accessories",
       "image": audioaccessories,
       "url" : "http://localhost:3000/products"
     }
@@ -164,21 +170,35 @@ function Home() {
 <div style={{marginBottom:"100px"}}></div>
 
 <Grid className="products-section" container direction="row" justifyContent="center">
-<div>
-  <Grid item>
-  <p style={{textAlign:"center", fontSize:"50px"}}>PRODUCTS</p>
-  </Grid>
-  <Grid container spacing={2}>
-    {productsJson.map(product=>(
-      <Grid item xl={6} lg={6} md={6} sm ={6} xs ={6}>
-        <img src={product.image} style={{maxWidth:"100%", height:"100%", objectFit:"cover"}}></img>
-      </Grid>
-
-    ))
-    }
-    </Grid>         
-</div>
+  <div>
+    <Grid item>
+      <p style={{textAlign:"center", fontSize:"50px"}}>PRODUCTS</p>
+    </Grid>
+    <Grid container spacing={2}>
+      {productsJson.map(product => (
+        <Grid item key={product.id} xl={6} lg={6} md={6} sm={6} xs={6}>
+          <div style={{position: "relative"}}>
+            <img src={product.image} style={{width: "100%", height: "300px", objectFit: "cover"}} alt={product.title} />
+            <div style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              color: "white",
+              padding: "8px",
+              textAlign: "center",
+              fontSize:"18px"
+            }}>
+              {product.title}
+            </div>
+          </div>
+        </Grid>
+      ))}
+    </Grid>
+  </div>
 </Grid>
+
     </div>
     
   );
