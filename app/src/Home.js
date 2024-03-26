@@ -125,7 +125,7 @@ function Home() {
         </div>
         </div>
       </Grid>
-      <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
+     
       {/* CSS to push the next content section down */}
       <div style={{marginBottom:"100px"}}></div>
       {/* <Divider/> */}
@@ -177,6 +177,7 @@ function Home() {
     <Grid container spacing={2}>
       {productsJson.map(product => (
         <Grid item key={product.id} xl={6} lg={6} md={6} sm={6} xs={6}>
+          {/* You need to wrap the image to a div with position relative to ensure the black background dosent go over other images */}
           <div style={{position: "relative"}}>
             <img src={product.image} style={{width: "100%", height: "300px", objectFit: "cover"}} alt={product.title} />
             <div style={{
@@ -198,7 +199,7 @@ function Home() {
     </Grid>
   </div>
 </Grid>
-
+<a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
     </div>
     
   );
