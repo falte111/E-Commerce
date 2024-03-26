@@ -13,6 +13,12 @@ import orchestral2 from "./resource/orchestral2.jpg"
 import orchestral3 from "./resource/orchestral3.jpg"
 import orchestral4 from "./resource/orchestral4.jpg"
 import classroom from "./resource/classroom.jpg"
+import piano from "./resource/piano.jpeg"
+import strings from "./resource/strings.jpg"
+import percussion from "./resource/percussion.jpg"
+import woodwind from "./resource/woodwind.jpg"
+import brass from "./resource/brass.jpg"
+import audioaccessories from "./resource/audioaccessories.jpg"
 import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg"
 import { Grid } from "@mui/material";
 import React, { useState, useEffect } from 'react';
@@ -34,6 +40,36 @@ function Home() {
     orchestral3,
     orchestral4
   ]
+
+  const productsJson=[
+    {
+      "image": piano,
+      "url" : "http://localhost:3000/products"
+    },
+
+    {
+      "image": strings,
+      "url" : "http://localhost:3000/products"
+    },
+    {
+      "image": percussion,
+      "url": "http://localhost:3000/products"
+    },
+    {
+      "image": woodwind,
+      "url" : "http://localhost:3000/products"
+    },
+    {
+      "image": brass,
+      "url" : "http://localhost:3000/products"
+    },
+    {
+      "image": audioaccessories,
+      "url" : "http://localhost:3000/products"
+    }
+
+  ]
+
 
   const [backgroundimageused, setBackGroundImageUsed] = useState(0);
   const navigate = useNavigate();
@@ -84,9 +120,9 @@ function Home() {
         </div>
       </Grid>
       <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
-      {/* Line break by adding br tag to separate background and contents */}
-      <div style={{marginBottom:"400px"}}></div>
-      <Divider/>
+      {/* CSS to push the next content section down */}
+      <div style={{marginBottom:"100px"}}></div>
+      {/* <Divider/> */}
       <p style={{textAlign:"center", fontSize:"50px"}}>MUSIC EDUCATION</p>
       <Grid className="musiceducation-section" container  direction="row" spacing={4}
   >     
@@ -108,12 +144,13 @@ function Home() {
         <Grid item  xl={7} lg={7} md={7} sm ={12} xs ={12}>
           <div>
             <p style={{fontSize:"30px"}}>Lorem ipsum dolor sit amet,  molestie et nunc. Praesent interdum ultricifaucibus orci luctus et  egestas eleifend dui eu vestibulum. In id imperdiet ipsum, eget porta turpis. Phasellus pulvinar tellus nec justo mollis, sollicitudin aliquet leo ullamcorper. Nunc dui leo, tincidunt non urna sit amet, euismod rhoncus sapien. Fusce bibendum rutrum diam id sollicitudin.</p>
+            <button style={buttonStyle}>FIND OUT MORE</button>
           </div>
 
         </Grid>
       </Grid>
-<br/>
-<Divider/>
+      <div style={{marginBottom:"100px"}}></div>
+{/* <Divider/> */}
 <Grid className="orchestral-section" container direction= "row" alignItems="center"  justifyContent="center">
   <div>
     <Grid item>
@@ -124,6 +161,24 @@ function Home() {
 
 </Grid>
 
+<div style={{marginBottom:"100px"}}></div>
+
+<Grid className="products-section" container direction="row" justifyContent="center">
+<div>
+  <Grid item>
+  <p style={{textAlign:"center", fontSize:"50px"}}>PRODUCTS</p>
+  </Grid>
+  <Grid container spacing={2}>
+    {productsJson.map(product=>(
+      <Grid item xl={6} lg={6} md={6} sm ={6} xs ={6}>
+        <img src={product.image} style={{maxWidth:"100%", height:"100%", objectFit:"cover"}}></img>
+      </Grid>
+
+    ))
+    }
+    </Grid>         
+</div>
+</Grid>
     </div>
     
   );
