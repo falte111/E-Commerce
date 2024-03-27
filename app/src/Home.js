@@ -180,6 +180,7 @@ function Home() {
           {/* You need to wrap the image to a div with position relative to ensure the black background dosent go over other images */}
           <div style={{position: "relative"}}>
             <img src={product.image} style={{width: "100%", height: "300px", objectFit: "cover"}} alt={product.title} />
+        {/* If you never declare position: relative, the position absolute will take reference from the most outer parent, hence putting relative will ensure that position absolute takes reference from direct parent */}
             <div style={{
               position: "absolute",
               bottom: 0,
