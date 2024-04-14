@@ -45,33 +45,33 @@ function Home() {
     {
       "title": "Piano",
       "image": piano,
-      "url" : "http://localhost:3000/products"
+      "url" : "/products"
     },
 
     {
       "title": "Strings",
       "image": strings,
-      "url" : "http://localhost:3000/products"
+      "url" : "/products"
     },
     { 
       "title": "Percussion",
       "image": percussion,
-      "url": "http://localhost:3000/products"
+      "url": "/products"
     },
     { 
       "title": "Woodwind",
       "image": woodwind,
-      "url" : "http://localhost:3000/products"
+      "url" : "/products"
     },
     {
       "title": "Brass",
       "image": brass,
-      "url" : "http://localhost:3000/products"
+      "url" : "/products"
     },
     {
       "title": "Audio Accessories",
       "image": audioaccessories,
-      "url" : "http://localhost:3000/products"
+      "url" : "/products"
     }
 
   ]
@@ -100,6 +100,9 @@ function Home() {
   //   backgroundRepeat: "no-repeat",
 
   // };
+
+
+
 
  const buttonStyle = {
     backgroundColor:"#fff474",
@@ -178,9 +181,8 @@ function Home() {
       {productsJson.map(product => (
         <Grid item key={product.id} xl={6} lg={6} md={6} sm={6} xs={6}>
           {/* You need to wrap the image to a div with position relative to ensure the black background dosent go over other images */}
-          <div style={{position: "relative"}}>
-            <img src={product.image} style={{width: "100%", height: "300px", objectFit: "cover"}} alt={product.title} />
-        {/* If you never declare position: relative, the position absolute will take reference from the most outer parent, hence putting relative will ensure that position absolute takes reference from direct parent */}
+          <a onClick={()=>navigate(product.url)} style={{cursor:'pointer'}}><div style={{position: "relative"}}>
+            <img src={product.image} style={{width: "100%", height: "300px", objectFit: "cover"}} alt={product.title}/>
             <div style={{
               position: "absolute",
               bottom: 0,
@@ -195,6 +197,7 @@ function Home() {
               {product.title}
             </div>
           </div>
+          </a>
         </Grid>
       ))}
     </Grid>

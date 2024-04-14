@@ -9,6 +9,7 @@ import Courses from "./Courses";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Blog from "./About";
 import BookTrial from "./BookTrial";
+import Products from "./Products";
 
 function App() {
   // const containerStyle = {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/booktrial" element={<BookTrial/>}/>
+        <Route path="/products" element={<Products/>}/>
       </Routes>
     </Router>
   );
