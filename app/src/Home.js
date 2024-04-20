@@ -134,10 +134,10 @@ function Home() {
         </div>
         </div>
       </Grid>
-     
       {/* CSS to push the next content section down */}
       <div style={{marginBottom:"100px"}}></div>
       {/* <Divider/> */}
+      <AnimatedOnScroll animationIn="bounceInUp">
       <p style={{textAlign:"center", fontSize:"50px"}}>MUSIC EDUCATION</p>
       <Grid className="musiceducation-section" container  direction="row" spacing={4}
   >     
@@ -165,7 +165,9 @@ function Home() {
         </Grid>
       </Grid>
       <div style={{marginBottom:"100px"}}></div>
+      </AnimatedOnScroll>
 {/* <Divider/> */}
+<AnimatedOnScroll animationIn="bounceInUp">
 <Grid className="orchestral-section" container direction= "row" alignItems="center"  justifyContent="center">
   <div>
     <Grid item>
@@ -175,9 +177,9 @@ function Home() {
   </div>
 
 </Grid>
-
+</AnimatedOnScroll>
 <div style={{marginBottom:"100px"}}></div>
-
+<AnimatedOnScroll animationIn="bounceInUp">
 <Grid className="products-section" container direction="row" justifyContent="center">
   <div>
     <Grid item>
@@ -209,6 +211,7 @@ function Home() {
     </Grid>
   </div>
 </Grid>
+</AnimatedOnScroll>
 <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
     </div>
     
