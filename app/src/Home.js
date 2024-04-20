@@ -27,7 +27,7 @@ import './BackgroundChanger.css';
 import './imagehover.css'
 import Divider from '@mui/material/Divider';
 import ImageSlideShow from "./ImageSlideShow";
-
+import {AnimatedOnScroll} from "react-animated-css-onscroll";
 function Home() {
   const backgroundimages =[
     background,
@@ -114,6 +114,11 @@ function Home() {
   return (
     
     <div>
+      <head>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </link>
+</head>
       <Navbar></Navbar>
       <Grid className="background-container" style={{backgroundImage: `url(${(backgroundimages[backgroundimageused])})`, backgroundRepeat:"no-repeat"}}>
         <div className="homeText"  style={{
