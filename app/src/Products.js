@@ -8,7 +8,8 @@ import { Navigate, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import { Grid, Toolbar } from "@mui/material";
 import piano from "./resource/piano.jpeg"
-import strings from "./resource/strings.jpg"
+//import strings from "./resource/strings.jpg"
+import strings2 from "./resource/strings2.jpg"
 import percussion from "./resource/percussion.jpg"
 import woodwind from "./resource/woodwind.jpg"
 import brass from "./resource/brass.jpg"
@@ -25,7 +26,7 @@ function Products() {
 
     {
       "title": "Strings",
-      "image": strings,
+      "image": strings2,
       "url" : "/products"
     },
     { 

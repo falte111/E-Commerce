@@ -14,7 +14,8 @@ import orchestral3 from "./resource/orchestral3.jpg"
 import orchestral4 from "./resource/orchestral4.jpg"
 import classroom from "./resource/classroom.jpg"
 import piano from "./resource/piano.jpeg"
-import strings from "./resource/strings.jpg"
+//import strings from "./resource/strings.jpg"
+import strings2 from "./resource/strings2.jpg"
 import percussion from "./resource/percussion.jpg"
 import woodwind from "./resource/woodwind.jpg"
 import brass from "./resource/brass.jpg"
@@ -50,7 +51,7 @@ function Home() {
 
     {
       "title": "Strings",
-      "image": strings,
+      "image": strings2,
       "url" : "/products"
     },
     { 
