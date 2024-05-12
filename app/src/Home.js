@@ -159,7 +159,7 @@ function Home() {
         <Grid item  xl={7} lg={7} md={7} sm ={12} xs ={12}>
           <div>
             <p style={{fontSize:"30px"}}>Lorem ipsum dolor sit amet,  molestie et nunc. Praesent interdum ultricifaucibus orci luctus et  egestas eleifend dui eu vestibulum. In id imperdiet ipsum, eget porta turpis. Phasellus pulvinar tellus nec justo mollis, sollicitudin aliquet leo ullamcorper. Nunc dui leo, tincidunt non urna sit amet, euismod rhoncus sapien. Fusce bibendum rutrum diam id sollicitudin.</p>
-            <button style={buttonStyle}>FIND OUT MORE</button>
+            <a href="http://localhost:3000/courses"><button style={buttonStyle}>FIND OUT MORE</button></a>
           </div>
 
         </Grid>
