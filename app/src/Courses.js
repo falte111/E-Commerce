@@ -12,7 +12,12 @@ import teacherorchestral from "./resource/teacherorchestral.jpg"
 import musictheory from "./resource/musictheory.jpg"
 import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg"
 import PersonSharpIcon from '@mui/icons-material/PersonSharp';
+import Face2SharpIcon from '@mui/icons-material/Face2Sharp';
 import Face3SharpIcon from '@mui/icons-material/Face3Sharp';
+import Face4SharpIcon from '@mui/icons-material/Face4Sharp';
+import FaceSharpIcon from '@mui/icons-material/FaceSharp';
+import EmojiEmotionsSharpIcon from '@mui/icons-material/EmojiEmotionsSharp';
+import Face4Sharp from "@mui/icons-material/Face4Sharp";
 function Courses() {
   return (
     <Grid
@@ -140,12 +145,110 @@ function Courses() {
             alignItems="center"
             height="100%" // Adjust height if needed
           >
-            <Face3SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            <FaceSharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
           </Box>
           <p>
           "Dr Edwin Choy has a wealth of knowledge in music, and is able to convey it to his students well. His approach to teaching allows his students to progress quickly as he us able to identify their weakness and strengths and recommends them training to build up the skill they are lacking. This allowed me to quickly improve my playing skills very quickly and to play pieces I used to think were beyond my reach."
           </p>
           <b>-Aswin Kummaran s/o Tamilarasu, Grade 8 Piano ABRSM student, Music Composition, Orchestration, Arranging & Production</b>
+        </Box>
+        
+      </Grid>
+
+      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
+      <Box
+          sx={{
+            backgroundColor: "#9ba6a5",
+            padding: 2, // Add padding if needed
+          }}
+        >
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            height="100%" // Adjust height if needed
+          >
+            <Face4SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+          </Box>
+          <p>
+          "Edwin alters the lessons according to my skill and knowledge level, and emphasized on the importance of music foundation and understanding. This gave me the skills needed to analyze the music I'm hearing, and understand the intention used by composers."
+          </p>
+          <b>-Gia Anastasia Leticia Zahid, DipABRSM Student
+          </b>
+        </Box>
+        
+      </Grid>
+
+      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
+      <Box
+          sx={{
+            backgroundColor: "#9ba6a5",
+            padding: 2, // Add padding if needed
+          }}
+        >
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            height="100%" // Adjust height if needed
+          >
+            <EmojiEmotionsSharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+          </Box>
+          <p>
+          "Edwin has a strong passion for music and gives his time selflessly. By setting up Bishan Symphonic Orchestra (Now disbanded, moved to Quindicesima Symphonic Orchestra), it helps create a platform for many other like minded individuals, making music together regardless of musical ability. He is also patient and shares freely his musical knowledge."
+          </p>
+          <b>-Juny, QSO percussionist & Oboist 
+          </b>
+        </Box>
+        
+      </Grid>
+
+      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
+      <Box
+          sx={{
+            backgroundColor: "#9ba6a5",
+            padding: 2, // Add padding if needed
+          }}
+        >
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            height="100%" // Adjust height if needed
+          >
+            <Face2SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+          </Box>
+          <p>
+          "Well-Qualified in music, Talented in Composition, Passionate in coaching!"
+          </p>
+          <b>-Julie Lee, Parent of student
+ 
+          </b>
+        </Box>
+        
+      </Grid>
+
+      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
+      <Box
+          sx={{
+            backgroundColor: "#9ba6a5",
+            padding: 2, // Add padding if needed
+          }}
+        >
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            height="100%" // Adjust height if needed
+          >
+            <Face3SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+          </Box>
+          <p>
+          "Under Mr Choy, my piano playing and improvisation skills have improved tremendously. If you want to get to the next level and get a passion for music, Mr Choy is the man."
+          </p>
+          <b>-Asher Fam, DipABRSM Student (2015)
+ 
+          </b>
         </Box>
         
       </Grid>
