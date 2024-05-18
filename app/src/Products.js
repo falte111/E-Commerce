@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import { Navigate, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import { Grid, Toolbar } from "@mui/material";
+import "./WhyChooseUs.css"
 import piano from "./resource/piano.jpeg"
 //import strings from "./resource/strings.jpg"
 import strings2 from "./resource/strings2.jpg"

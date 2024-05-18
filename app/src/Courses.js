@@ -5,12 +5,14 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Navbar from "./Navbar";
-import { Grid, Toolbar } from "@mui/material";
+import { Grid, Toolbar, Box } from "@mui/material";
 //import background from "./resource/musicbg.jpg";
 import kidplayingpiano from "./resource/kidplayingpiano.jpg"
 import teacherorchestral from "./resource/teacherorchestral.jpg"
 import musictheory from "./resource/musictheory.jpg"
 import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg"
+import PersonSharpIcon from '@mui/icons-material/PersonSharp';
+import Face3SharpIcon from '@mui/icons-material/Face3Sharp';
 function Courses() {
   return (
     <Grid
@@ -26,6 +28,7 @@ function Courses() {
        <Navbar></Navbar>
       </Toolbar>
     </Grid>
+
     <Grid className="courses-section" container direction="row" justifyContent="center" textAlign="center">
       <Grid item lg={12} md={12} xs={12}>
         <p style={{ textAlign: "center", fontSize: "50px" }}>OUR CLASSES</p>
@@ -91,14 +94,68 @@ function Courses() {
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
+      </Grid>      
+    </Grid>
+    <Grid>
+      <p className="whychooseus">Why choose us?</p>
+    </Grid>
+
+    //Student Reviews section
+    <Grid container  spacing={3}
+    direction="row" 
+    justifyContent="center">
+      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>
+      <Box
+          sx={{
+            backgroundColor: "#9ba6a5",
+            padding: 2, // Add padding if needed
+          }}
+        >
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            height="100%" // Adjust height if needed
+          >
+            <PersonSharpIcon sx={{ fontSize: 105, color: "#2772db" }} />
+          </Box>
+          <p>
+          “Lessons have been extremely hollistic & “free flow”, Catering to what I require in order to improve my skills and become a better player instead of a rigid syllabus structure.”
+          </p>
+          <b>-Lee Sek Heng, Grade 8 Piano Performance ABRSM, PASS</b>
+        </Box>
+        
       </Grid>
 
-
-
-      
+      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
+      <Box
+          sx={{
+            backgroundColor: "#9ba6a5",
+            padding: 2, // Add padding if needed
+          }}
+        >
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            height="100%" // Adjust height if needed
+          >
+            <Face3SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+          </Box>
+          <p>
+          "Dr Edwin Choy has a wealth of knowledge in music, and is able to convey it to his students well. His approach to teaching allows his students to progress quickly as he us able to identify their weakness and strengths and recommends them training to build up the skill they are lacking. This allowed me to quickly improve my playing skills very quickly and to play pieces I used to think were beyond my reach."
+          </p>
+          <b>-Aswin Kummaran s/o Tamilarasu, Grade 8 Piano ABRSM student, Music Composition, Orchestration, Arranging & Production</b>
+        </Box>
+        
+      </Grid>
     </Grid>
+
     <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20would%20like%20to%20find%20out%20more%20about%20the%20courses%20%20offered%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
   </Grid>
+  
+  
 );
+
 };
 export default Courses;
