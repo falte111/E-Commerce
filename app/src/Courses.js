@@ -17,7 +17,7 @@ import Face3SharpIcon from '@mui/icons-material/Face3Sharp';
 import Face4SharpIcon from '@mui/icons-material/Face4Sharp';
 import FaceSharpIcon from '@mui/icons-material/FaceSharp';
 import EmojiEmotionsSharpIcon from '@mui/icons-material/EmojiEmotionsSharp';
-import Face4Sharp from "@mui/icons-material/Face4Sharp";
+import Face5SharpIcon from '@mui/icons-material/Face5Sharp';
 function Courses() {
   return (
     <Grid
@@ -111,7 +111,7 @@ function Courses() {
         <Grid item xl={6} display="flex">
           <Box
             sx={{
-              padding: 2,
+            
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
@@ -126,7 +126,7 @@ function Courses() {
               alignItems="center"
               flexGrow={1}
             >
-              <PersonSharpIcon sx={{ fontSize: 105, color: "#2772db" }} />
+              <Face5SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
             </Box>
             <Box textAlign="center">
               <p>
