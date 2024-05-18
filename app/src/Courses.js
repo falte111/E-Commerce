@@ -105,154 +105,184 @@ function Courses() {
       <p className="whychooseus">Why choose us?</p>
     </Grid>
 
-    //Student Reviews section
-    <Grid container  spacing={3}
-    direction="row" 
-    justifyContent="center">
-      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>
-      <Box
-          sx={{
-            backgroundColor: "#9ba6a5",
-            padding: 2, // Add padding if needed
-          }}
-        >
+    {/* Student Reviews section */}
+    <Box sx={{ width: '100%', backgroundColor: '#9ba6a5', padding: 2 }}>
+      <Grid container spacing={3} justifyContent="center">
+        <Grid item xl={6} display="flex">
           <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            height="100%" // Adjust height if needed
+            sx={{
+              padding: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100%',
+              width: '100%',
+            }}
           >
-            <PersonSharpIcon sx={{ fontSize: 105, color: "#2772db" }} />
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              flexGrow={1}
+            >
+              <PersonSharpIcon sx={{ fontSize: 105, color: "#2772db" }} />
+            </Box>
+            <Box textAlign="center">
+              <p>
+                “Lessons have been extremely holistic & “free flow”, Catering to what I require in order to improve my skills and become a better player instead of a rigid syllabus structure.”
+              </p>
+              <b>-Lee Sek Heng, Grade 8 Piano Performance ABRSM, PASS</b>
+            </Box>
           </Box>
-          <p>
-          “Lessons have been extremely hollistic & “free flow”, Catering to what I require in order to improve my skills and become a better player instead of a rigid syllabus structure.”
-          </p>
-          <b>-Lee Sek Heng, Grade 8 Piano Performance ABRSM, PASS</b>
-        </Box>
-        
-      </Grid>
+        </Grid>
 
-      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
-      <Box
-          sx={{
-            backgroundColor: "#9ba6a5",
-            padding: 2, // Add padding if needed
-          }}
-        >
+        <Grid item xl={6} display="flex">
           <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            height="100%" // Adjust height if needed
+            sx={{
+              padding: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100%',
+              width: '100%',
+            }}
           >
-            <FaceSharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              flexGrow={1}
+            >
+              <FaceSharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            </Box>
+            <Box textAlign="center">
+              <p>
+                "Dr Edwin Choy has a wealth of knowledge in music, and is able to convey it to his students well. His approach to teaching allows his students to progress quickly as he is able to identify their weaknesses and strengths and recommends them training to build up the skill they are lacking. This allowed me to quickly improve my playing skills and to play pieces I used to think were beyond my reach."
+              </p>
+              <b>-Aswin Kummaran s/o Tamilarasu, Grade 8 Piano ABRSM student, Music Composition, Orchestration, Arranging & Production</b>
+            </Box>
           </Box>
-          <p>
-          "Dr Edwin Choy has a wealth of knowledge in music, and is able to convey it to his students well. His approach to teaching allows his students to progress quickly as he us able to identify their weakness and strengths and recommends them training to build up the skill they are lacking. This allowed me to quickly improve my playing skills very quickly and to play pieces I used to think were beyond my reach."
-          </p>
-          <b>-Aswin Kummaran s/o Tamilarasu, Grade 8 Piano ABRSM student, Music Composition, Orchestration, Arranging & Production</b>
-        </Box>
-        
-      </Grid>
+        </Grid>
 
-      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
-      <Box
-          sx={{
-            backgroundColor: "#9ba6a5",
-            padding: 2, // Add padding if needed
-          }}
-        >
+        <Grid item xl={6} display="flex">
           <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            height="100%" // Adjust height if needed
+            sx={{
+              padding: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100%',
+              width: '100%',
+            }}
           >
-            <Face4SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              flexGrow={1}
+            >
+              <Face4SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            </Box>
+            <Box textAlign="center">
+              <p>
+                "Edwin alters the lessons according to my skill and knowledge level, and emphasized on the importance of music foundation and understanding. This gave me the skills needed to analyze the music I'm hearing, and understand the intention used by composers."
+              </p>
+              <b>-Gia Anastasia Leticia Zahid, DipABRSM Student</b>
+            </Box>
           </Box>
-          <p>
-          "Edwin alters the lessons according to my skill and knowledge level, and emphasized on the importance of music foundation and understanding. This gave me the skills needed to analyze the music I'm hearing, and understand the intention used by composers."
-          </p>
-          <b>-Gia Anastasia Leticia Zahid, DipABRSM Student
-          </b>
-        </Box>
-        
-      </Grid>
+        </Grid>
 
-      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
-      <Box
-          sx={{
-            backgroundColor: "#9ba6a5",
-            padding: 2, // Add padding if needed
-          }}
-        >
+        <Grid item xl={6} display="flex">
           <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            height="100%" // Adjust height if needed
+            sx={{
+              padding: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100%',
+              width: '100%',
+            }}
           >
-            <EmojiEmotionsSharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              flexGrow={1}
+            >
+              <EmojiEmotionsSharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            </Box>
+            <Box textAlign="center">
+              <p>
+                "Edwin has a strong passion for music and gives his time selflessly. By setting up Bishan Symphonic Orchestra (Now disbanded, moved to Quindicesima Symphonic Orchestra), it helps create a platform for many other like minded individuals, making music together regardless of musical ability. He is also patient and shares freely his musical knowledge."
+              </p>
+              <b>-Juny, QSO percussionist & Oboist</b>
+            </Box>
           </Box>
-          <p>
-          "Edwin has a strong passion for music and gives his time selflessly. By setting up Bishan Symphonic Orchestra (Now disbanded, moved to Quindicesima Symphonic Orchestra), it helps create a platform for many other like minded individuals, making music together regardless of musical ability. He is also patient and shares freely his musical knowledge."
-          </p>
-          <b>-Juny, QSO percussionist & Oboist 
-          </b>
-        </Box>
-        
-      </Grid>
+        </Grid>
 
-      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
-      <Box
-          sx={{
-            backgroundColor: "#9ba6a5",
-            padding: 2, // Add padding if needed
-          }}
-        >
+        <Grid item xl={6} display="flex">
           <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            height="100%" // Adjust height if needed
+            sx={{
+              padding: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100%',
+              width: '100%',
+            }}
           >
-            <Face2SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              flexGrow={1}
+            >
+              <Face2SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            </Box>
+            <Box textAlign="center">
+              <p>
+                "Well-Qualified in music, Talented in Composition, Passionate in coaching!"
+              </p>
+              <b>-Julie Lee, Parent of student</b>
+            </Box>
           </Box>
-          <p>
-          "Well-Qualified in music, Talented in Composition, Passionate in coaching!"
-          </p>
-          <b>-Julie Lee, Parent of student
- 
-          </b>
-        </Box>
+        </Grid>
         
-      </Grid>
-
-      <Grid item xl={6} style={{backgroundColor:"#9ba6a5"}}>  
-      <Box
-          sx={{
-            backgroundColor: "#9ba6a5",
-            padding: 2, // Add padding if needed
-          }}
-        >
+        <Grid item xl={6} display="flex">
           <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            height="100%" // Adjust height if needed
+            sx={{
+              padding: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100%',
+              width: '100%',
+            }}
           >
-            <Face3SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              flexGrow={1}
+            >
+              <Face3SharpIcon sx={{ fontSize: 86, color: "#2772db" }} />
+            </Box>
+            <Box textAlign="center">
+              <p>
+                "Under Mr Choy, my piano playing and improvisation skills have improved tremendously. If you want to get to the next level and get a passion for music, Mr Choy is the man."
+              </p>
+              <b>-Asher Fam, DipABRSM Student (2015)</b>
+            </Box>
           </Box>
-          <p>
-          "Under Mr Choy, my piano playing and improvisation skills have improved tremendously. If you want to get to the next level and get a passion for music, Mr Choy is the man."
-          </p>
-          <b>-Asher Fam, DipABRSM Student (2015)
- 
-          </b>
-        </Box>
-        
+        </Grid>
       </Grid>
-    </Grid>
+    </Box>
 
     <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20would%20like%20to%20find%20out%20more%20about%20the%20courses%20%20offered%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
   </Grid>
