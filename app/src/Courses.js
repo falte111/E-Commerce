@@ -105,6 +105,7 @@ function Courses() {
       <p className="whychooseus">Why choose us?</p>
     </Grid>
 
+
     {/* Student Reviews section */}
     <Box sx={{ width: '100%', backgroundColor: '#9ba6a5', padding: 2 }}>
       <Grid container spacing={3} justifyContent="center">
@@ -283,6 +284,10 @@ function Courses() {
         </Grid>
       </Grid>
     </Box>
+    
+    <Grid>
+      <p className="whychooseus">Our Orchestral</p>
+    </Grid>
 
     <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20would%20like%20to%20find%20out%20more%20about%20the%20courses%20%20offered%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
   </Grid>

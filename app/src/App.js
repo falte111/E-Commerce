@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Blog from "./About";
 import BookTrial from "./BookTrial";
 import Products from "./Products";
-
+import ScrollToTop from "./ScrollToTop"
 function App() {
   // const containerStyle = {
   //   width: "100vw",
@@ -26,6 +26,7 @@ function App() {
     //   <Cards></Cards>
     // </div>
     <Router>
+      <ScrollToTop></ScrollToTop>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
