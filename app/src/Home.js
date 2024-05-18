@@ -21,7 +21,7 @@ import woodwind from "./resource/woodwind.jpg"
 import brass from "./resource/brass.jpg"
 import audioaccessories from "./resource/audioaccessories.jpg"
 import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg"
-import { Grid } from "@mui/material";
+import { Grid, Box} from "@mui/material";
 import React, { useState, useEffect } from 'react';
 import './BackgroundChanger.css'; 
 import './imagehover.css'
@@ -167,17 +167,21 @@ function Home() {
       <div style={{marginBottom:"100px"}}></div>
       </AnimatedOnScroll>
 {/* <Divider/> */}
+
+<Box sx={{ width: '100%', backgroundColor: '#383434'}}>
 <AnimatedOnScroll animationIn="bounceInUp">
 <Grid className="orchestral-section" container direction= "row" alignItems="center"  justifyContent="center">
   <div>
     <Grid item>
-    <p style={{textAlign:"center", fontSize:"50px"}}>ORCHESTRAL</p>
+    <p style={{textAlign:"center", fontSize:"50px" , color:"#cc6c0c"}}>ORCHESTRAL</p>
     <ImageSlideShow></ImageSlideShow>
     </Grid>
   </div>
 
 </Grid>
 </AnimatedOnScroll>
+</Box>
+
 <div style={{marginBottom:"100px"}}></div>
 <AnimatedOnScroll animationIn="bounceInUp">
 <Grid className="products-section" container direction="row" justifyContent="center">
