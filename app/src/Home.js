@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Navigate, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer"
 import background from "./resource/musicbg.jpg";
 import background2 from "./resource/pianoplaying.jpg"
 import background3 from "./resource/trumpet.jpg"
@@ -173,7 +174,7 @@ function Home() {
 <Grid className="orchestral-section" container direction= "row" alignItems="center"  justifyContent="center">
   <div>
     <Grid item>
-    <p style={{textAlign:"center", fontSize:"50px" , color:"#cc6c0c"}}>ORCHESTRAL</p>
+    <p style={{textAlign:"center", fontSize:"50px" , color:"#f07404"}}>ORCHESTRAL</p>
     <ImageSlideShow></ImageSlideShow>
     </Grid>
   </div>
@@ -216,7 +217,8 @@ function Home() {
   </div>
 </Grid>
 </AnimatedOnScroll>
-<a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
+<Footer></Footer>
+<a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:5,right:5}} /></a>
     </div>
     
   );
