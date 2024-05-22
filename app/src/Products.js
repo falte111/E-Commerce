@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Navigate, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer"
 import { Grid, Toolbar } from "@mui/material";
 import "./WhyChooseUs.css"
 import piano from "./resource/piano.jpeg"
@@ -15,6 +16,7 @@ import percussion from "./resource/percussion.jpg"
 import woodwind from "./resource/woodwind.jpg"
 import brass from "./resource/brass.jpg"
 import audioaccessories from "./resource/audioaccessories.jpg"
+import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg"
 
 function Products() {
   
@@ -92,6 +94,8 @@ function Products() {
   </div>
 </Grid>
     </Grid>
+    <Footer></Footer>
+    <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20would%20like%20to%20find%20out%20more%20about%20the%20products%20sold%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:5,right:5}} /></a>
     </div>
   );
 }

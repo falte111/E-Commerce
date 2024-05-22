@@ -4,6 +4,8 @@ import { MuiTelInput } from 'mui-tel-input'
 import { useState } from "react";
 import PlaceIcon from '@mui/icons-material/Place';
 import PhoneIcon from '@mui/icons-material/Phone';
+import Footer from "./Footer"
+import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg"
 import axios from "axios";
 function BookTrial() {
     const API_URL = "http://localhost:8080";
@@ -94,12 +96,12 @@ function BookTrial() {
           </form>
           <Grid item lg={12} md={12} xs={12}>
           <div><h1>Address</h1></div>
-          <div>
-          <PlaceIcon color="action"></PlaceIcon> <text>36 Toa Payoh, #11-341, Singapore, Singapore</text></div>
+          <div><PlaceIcon color="action"></PlaceIcon> <text>36 Toa Payoh, #11-341, Singapore, Singapore</text></div>
   <div><PhoneIcon color = "action"></PhoneIcon><text>+65 9145 0050</text></div>
           </Grid>
           </Grid>
-
+          <Footer></Footer>
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:5,right:5}} /></a>
         </Grid>
         
         {/* <Grid container spacing={0}
@@ -115,6 +117,7 @@ function BookTrial() {
 
         </Grid>
         </Grid> */}
+  
         </div>
     )
     }

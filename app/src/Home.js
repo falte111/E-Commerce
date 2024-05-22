@@ -173,8 +173,9 @@ function Home() {
 <AnimatedOnScroll animationIn="bounceInUp">
 <Grid className="orchestral-section" container direction= "row" alignItems="center"  justifyContent="center">
   <div>
+  {/* color:"#f07404" */}
     <Grid item>
-    <p style={{textAlign:"center", fontSize:"50px" , color:"#f07404"}}>ORCHESTRAL</p>
+    <p style={{textAlign:"center", fontSize:"50px" , color:"white"}}>ORCHESTRAL</p>
     <ImageSlideShow></ImageSlideShow>
     </Grid>
   </div>

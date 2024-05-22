@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Navbar from "./Navbar";
+import YoutubeEmbeded from "./YoutubeEmbed";
 import { Grid, Toolbar, Box } from "@mui/material";
 //import background from "./resource/musicbg.jpg";
 import kidplayingpiano from "./resource/kidplayingpiano.jpg"
@@ -284,12 +285,21 @@ function Courses() {
         </Grid>
       </Grid>
     </Box>
+    <Grid item>
+    <p className="whychooseus">Our Orchestral</p>
+    </Grid>
+    <Grid item>
+      <p style={{textAlign:"center", fontSize:"50px"}}>More than just exams!</p>
+      <p style={{textAlign:"center", fontSize:"30px"}}>Students are encouraged to join Quindicesima Symphonic Orchestra (QSO) where likeminded musicians learn to play as a small group, or an ensemble, or with the entire orchestra!</p>
+      <p style={{textAlign:"center", fontSize:"30px"}}>Students who study composition can see their work played by QSO, and even continue to produce their own music!</p>
     
-    <Grid>
-      <p className="whychooseus">Our Orchestral</p>
+    </Grid>
+    <Grid item>
+      <p style={{textAlign:"center", fontSize:"30px"}}>Check out the Attack on Titan Composition by our talented student Aswin Kummaran!</p>
+      <YoutubeEmbeded embedId="idTvjMJPAHQ"></YoutubeEmbeded>
     </Grid>
 
-    <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20would%20like%20to%20find%20out%20more%20about%20the%20courses%20%20offered%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:0,right:0}} /></a>
+    <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20would%20like%20to%20find%20out%20more%20about%20the%20courses%20%20offered%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:5,right:5}} /></a>
   </Grid>
   
   
