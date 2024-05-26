@@ -13,6 +13,7 @@ import orchestral1 from "./resource/orchestral1.jpg"
 import orchestral2 from "./resource/orchestral2.jpg"
 import orchestral3 from "./resource/orchestral3.jpg"
 import orchestral4 from "./resource/orchestral4.jpg"
+import edwin from "./resource/edwin.jpg"
 import classroom from "./resource/classroom.jpg"
 import piano from "./resource/piano.jpeg"
 //import strings from "./resource/strings.jpg"
@@ -150,7 +151,8 @@ function Home() {
           
           {/* https://stackoverflow.com/questions/66226603/how-to-fit-images-to-different-screen-resolutions */}
           <a href="http://localhost:3000/courses">
-          <img className="image" src={classroom} style={{maxwidth:"100%" , height:"600px"}}></img>
+           {/* src= classroom */}
+          <img className="image" src={edwin} style={{maxwidth:"100%" , height:"600px"}}></img>
           <div class="middle">
     <div class="text">FIND OUT MORE!</div>
   </div>
@@ -159,7 +161,7 @@ function Home() {
         </Grid>
         <Grid item  xl={7} lg={7} md={7} sm ={12} xs ={12}>
           <div>
-            <p style={{fontSize:"30px"}}>Lorem ipsum dolor sit amet,  molestie et nunc. Praesent interdum ultricifaucibus orci luctus et  egestas eleifend dui eu vestibulum. In id imperdiet ipsum, eget porta turpis. Phasellus pulvinar tellus nec justo mollis, sollicitudin aliquet leo ullamcorper. Nunc dui leo, tincidunt non urna sit amet, euismod rhoncus sapien. Fusce bibendum rutrum diam id sollicitudin.</p>
+            <p style={{fontSize:"30px"}}>At Quindicesima, we believe in the transformative power of music education. Music is not just an art form; it is a universal language that nurtures creativity, discipline, and emotional expression. Our commitment to music education is rooted in the understanding that learning music fosters critical thinking, enhances cognitive abilities, and builds confidence. </p>
             <a href="http://localhost:3000/courses"><button style={buttonStyle}>FIND OUT MORE</button></a>
           </div>
 

@@ -108,7 +108,7 @@ function Courses() {
 
 
     {/* Student Reviews section */}
-    <Box sx={{ width: '100%', backgroundColor: '#9ba6a5', padding: 2 }}>
+    <Box sx={{ width: '100%', backgroundColor: '#9ba6a5' }}>
       <Grid container spacing={3} justifyContent="center">
         <Grid item xl={6} display="flex">
           <Box
@@ -283,6 +283,9 @@ function Courses() {
             </Box>
           </Box>
         </Grid>
+        {/* Empty grid item to extend the background color  */}
+        <Grid item>
+          </Grid> 
       </Grid>
     </Box>
     <Grid item>
