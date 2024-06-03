@@ -4,16 +4,18 @@ import orchestral1 from "./resource/orchestral1.jpg"
 import orchestral2 from "./resource/orchestral2.jpg"
 import orchestral3 from "./resource/orchestral3.jpg"
 import orchestral4 from "./resource/orchestral4.jpg"
+import orchestral5 from "./resource/orchestral5.jpg"
 
 function ImageSlideShow() {
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
   const colors = ["#0088FE", "#00C49F", "#FFBB28"];
   const orchestraImages=[
-    // orchestral1,
+    orchestral1,
     orchestral2,
     orchestral3,
-    orchestral4
+    orchestral4,
+    orchestral5
   ]
 
   const delay = 2500;

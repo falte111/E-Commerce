@@ -11,6 +11,7 @@ import { Grid, Toolbar, Box } from "@mui/material";
 import kidplayingpiano from "./resource/kidplayingpiano.jpg"
 import teacherorchestral from "./resource/teacherorchestral.jpg"
 import musictheory from "./resource/musictheory.jpg"
+import edwin from "./resource/edwin.jpg"
 import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg"
 import PersonSharpIcon from '@mui/icons-material/PersonSharp';
 import Face2SharpIcon from '@mui/icons-material/Face2Sharp';
@@ -19,6 +20,8 @@ import Face4SharpIcon from '@mui/icons-material/Face4Sharp';
 import FaceSharpIcon from '@mui/icons-material/FaceSharp';
 import EmojiEmotionsSharpIcon from '@mui/icons-material/EmojiEmotionsSharp';
 import Face5SharpIcon from '@mui/icons-material/Face5Sharp';
+import ImageSlideShow from "./ImageSlideShow";
+import Footer from "./Footer"
 function Courses() {
   return (
     <Grid
@@ -106,6 +109,22 @@ function Courses() {
       <p className="whychooseus">Why choose us?</p>
     </Grid>
 
+{/* Edwin experience section */}
+    <Grid
+    container
+    spacing={0}
+    direction="row"
+    alignItems="center"
+    justifyContent="center">
+    
+    <Grid item xl={6} lg={6} md={12} sm={12} xs={12}>
+    <img className="image" src={edwin} style={{maxwidth:"100%" , height:"auto"}}></img>
+    </Grid>
+    <Grid item xl={6} lg={6} md={12} sm={12} xs={12}>
+      <b style={{fontSize:"40px"}}>Edwin Choy PHD In Music</b>
+      <p style={{fontSize:"20px"}}>We aim to cultivate a lifelong passion for music in our students by providing a supportive and inspiring environment where they can explore their musical potential. Through personalized instruction and performance opportunities, we help students develop technical skills, artistic sensibility, and an appreciation for the rich tapestry of musical traditions. </p>
+    </Grid>
+    </Grid>
 
     {/* Student Reviews section */}
     <Box sx={{ width: '100%', backgroundColor: '#9ba6a5' }}>
@@ -292,16 +311,19 @@ function Courses() {
     <p className="whychooseus">Our Orchestral</p>
     </Grid>
     <Grid item>
-      <p style={{textAlign:"center", fontSize:"50px"}}>More than just exams!</p>
+      <p style={{textAlign:"center", fontSize:"50px"}}>More than just exams! Beyond Classrooms!</p>
       <p style={{textAlign:"center", fontSize:"30px"}}>Students are encouraged to join Quindicesima Symphonic Orchestra (QSO) where likeminded musicians learn to play as a small group, or an ensemble, or with the entire orchestra!</p>
-      <p style={{textAlign:"center", fontSize:"30px"}}>Students who study composition can see their work played by QSO, and even continue to produce their own music!</p>
-    
     </Grid>
+    
+    <ImageSlideShow></ImageSlideShow>
+
     <Grid item>
+    <p style={{textAlign:"center", fontSize:"30px"}}>Students who study composition can see their work played by QSO, and even continue to produce their own music!</p>
       <p style={{textAlign:"center", fontSize:"30px"}}>Check out the Attack on Titan Composition by our talented student Aswin Kummaran!</p>
       <YoutubeEmbeded embedId="idTvjMJPAHQ"></YoutubeEmbeded>
     </Grid>
-
+    
+    <Footer></Footer>
     <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20would%20like%20to%20find%20out%20more%20about%20the%20courses%20%20offered%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:5,right:5}} /></a>
   </Grid>
   

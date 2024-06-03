@@ -178,6 +178,9 @@ function Home() {
   {/* color:"#f07404" */}
     <Grid item>
     <p style={{textAlign:"center", fontSize:"50px" , color:"white"}}>ORCHESTRAL</p>
+    <p style={{textAlign:"center", fontSize:"25px" , color:"white"}}>Join our orchestral family to apply your learning and perform for the community! </p>
+    <p style={{textAlign:"center", fontSize:"25px" , color:"white"}}>We welcome students of all levels be it Beginner or Professional! </p>
+    <div style={{textAlign:"center" , paddingBottom:"20px"}}><button style={buttonStyle} onClick={()=>navigate("/orchestral")}><span style={{color:"#4f504b", fontFamily:"Droid Sans"}}>JOIN OUR COMMUNITY</span></button></div>
     <ImageSlideShow></ImageSlideShow>
     </Grid>
   </div>
