@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import whatsapplogo from "./resource/WhatsAppButtonGreenSmall.svg";
 import axios from "axios";
 import backgroundClass from "./resource/musictheory1.jpg";
+import "./ButtonHover.css"
 
 function BookTrial() {
   const API_URL = "http://localhost:8080";
@@ -27,12 +28,12 @@ function BookTrial() {
     };
     axios.post(API_URL + "/booktrial", userParticulars);
   };
-  const buttonStyle = {
-    backgroundColor: "#a054e4",
-    borderRadius: 50,
-    width: "180px",
-    height: "40px",
-  };
+  // const buttonStyle = {
+  //   backgroundColor: "#a054e4",
+  //   borderRadius: 50,
+  //   width: "180px",
+  //   height: "40px",
+  // };
   const backGroundBlur = {
     backgroundImage: `url(${backgroundClass})`,
     backgroundRepeat: "no-repeat",
@@ -132,7 +133,7 @@ function BookTrial() {
                 ></TextField>
               </div>
               <div>
-                <button type="submit" style={buttonStyle}>
+                <button type="submit" className="button">
                   <span style={{ color: "white", fontFamily: "Edwin" }}>
                     SUBMIT
                   </span>
