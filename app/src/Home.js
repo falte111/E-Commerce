@@ -134,7 +134,7 @@ function Home() {
         <div>
         <h1 style={{fontSize:"80px", margin:"0px" , padding:"0px", fontFamily:"Edwin", color: "white"}}>Music is your world</h1>
         <h3 style = {{paddingLeft:"35%", fontFamily:"Edwin", color: "white"}}>Dont miss a chance!</h3>
-        <div style={{paddingLeft:"35%"}}><button style={buttonStyle} onClick={()=>navigate("/booktrial")}><span style={{color:"#4f504b", fontFamily:"Edwin"}}>START LEARNING</span></button></div>
+        <div style={{paddingLeft:"35%"}}><button className="buttonFindOutMore" onClick={()=>navigate("/booktrial")}><span style={{color:"#4f504b", fontFamily:"Edwin"}}>START LEARNING</span></button></div>
         {/* onMouseEnter={} */}
         </div>
         </div>
@@ -165,7 +165,7 @@ function Home() {
         <Grid item  xl={7} lg={7} md={7} sm ={12} xs ={12}>
           <div>
             <p style={{fontSize:"30px"}}>At Quindicesima, we believe in the transformative power of music education. Music is not just an art form; it is a universal language that nurtures creativity, discipline, and emotional expression. Our commitment to music education is rooted in the understanding that learning music fosters critical thinking, enhances cognitive abilities, and builds confidence. </p>
-            <a href="http://localhost:3000/courses"><button style={buttonStyle}>FIND OUT MORE</button></a>
+            <a href="http://localhost:3000/courses"><button className="buttonFindOutMore">FIND OUT MORE</button></a>
           </div>
 
         </Grid>
@@ -183,7 +183,7 @@ function Home() {
     <p style={{textAlign:"center", fontSize:"50px" , color:"white"}}>Quindicesima Symphonic Orchestra</p>
     <p style={{textAlign:"center", fontSize:"25px" , color:"white"}}>Join our orchestral family to apply your learning and perform for the community! </p>
     <p style={{textAlign:"center", fontSize:"25px" , color:"white"}}>We welcome students of all levels be it Beginner or Professional! </p>
-    <div style={{textAlign:"center" , paddingBottom:"20px"}}><button style={buttonStyle} onClick={()=>navigate("/orchestral")}><span style={{color:"#4f504b", fontFamily:"Edwin"}}>JOIN OUR COMMUNITY</span></button></div>
+    <div style={{textAlign:"center" , paddingBottom:"20px"}}><button className="buttonFindOutMore" onClick={()=>navigate("/orchestral")}><span style={{color:"#4f504b", fontFamily:"Edwin"}}>JOIN OUR COMMUNITY</span></button></div>
     <ImageSlideShow></ImageSlideShow>
     </Grid>
   </div>

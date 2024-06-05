@@ -9,3 +9,16 @@
     height: 40px;
     cursor: pointer; 
 }
+
+
+.buttonFindOutMore:hover{
+    background-color: #1864c4
+}
+
+.buttonFindOutMore{
+    background-color: #fff474;
+    border-radius: 50px;
+    width: 180px;
+    height: 40px;
+    cursor: pointer; 
+}
