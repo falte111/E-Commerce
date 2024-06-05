@@ -111,6 +111,7 @@ function Home() {
 
  const buttonStyle = {
     backgroundColor:"#fff474",
+    fontFamily:"Edwin",
     borderRadius: 50,
     width:"180px",
     height:"40px",
@@ -131,9 +132,9 @@ function Home() {
         justifyContent: 'center',
         height: '100vh',}}>
         <div>
-        <h1 style={{fontSize:"80px", margin:"0px" , padding:"0px", fontFamily:"sans-serif", color: "white"}}>Music is your world</h1>
-        <h3 style = {{paddingLeft:"35%", fontFamily:"sans-serif", color: "white"}}>Dont miss a chance!</h3>
-        <div style={{paddingLeft:"35%"}}><button style={buttonStyle} onClick={()=>navigate("/booktrial")}><span style={{color:"#4f504b", fontFamily:"Droid Sans"}}>START LEARNING</span></button></div>
+        <h1 style={{fontSize:"80px", margin:"0px" , padding:"0px", fontFamily:"Edwin", color: "white"}}>Music is your world</h1>
+        <h3 style = {{paddingLeft:"35%", fontFamily:"Edwin", color: "white"}}>Dont miss a chance!</h3>
+        <div style={{paddingLeft:"35%"}}><button style={buttonStyle} onClick={()=>navigate("/booktrial")}><span style={{color:"#4f504b", fontFamily:"Edwin"}}>START LEARNING</span></button></div>
         {/* onMouseEnter={} */}
         </div>
         </div>
@@ -179,10 +180,10 @@ function Home() {
   <div>
   {/* color:"#f07404" */}
     <Grid item>
-    <p style={{textAlign:"center", fontSize:"50px" , color:"white"}}>ORCHESTRAL</p>
+    <p style={{textAlign:"center", fontSize:"50px" , color:"white"}}>Quindicesima Symphonic Orchestra</p>
     <p style={{textAlign:"center", fontSize:"25px" , color:"white"}}>Join our orchestral family to apply your learning and perform for the community! </p>
     <p style={{textAlign:"center", fontSize:"25px" , color:"white"}}>We welcome students of all levels be it Beginner or Professional! </p>
-    <div style={{textAlign:"center" , paddingBottom:"20px"}}><button style={buttonStyle} onClick={()=>navigate("/orchestral")}><span style={{color:"#4f504b", fontFamily:"Droid Sans"}}>JOIN OUR COMMUNITY</span></button></div>
+    <div style={{textAlign:"center" , paddingBottom:"20px"}}><button style={buttonStyle} onClick={()=>navigate("/orchestral")}><span style={{color:"#4f504b", fontFamily:"Edwin"}}>JOIN OUR COMMUNITY</span></button></div>
     <ImageSlideShow></ImageSlideShow>
     </Grid>
   </div>
@@ -213,7 +214,8 @@ function Home() {
               color: "white",
               padding: "8px",
               textAlign: "center",
-              fontSize:"18px"
+              fontSize:"18px",
+              fontFamily:"Edwin"
             }}>
               {product.title}
             </div>

@@ -133,7 +133,7 @@ function Navbar() {
                 key={page}
                 onClick={() => handleCloseNavMenu(page)}
                 on
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block" , fontFamily:"Edwin"}}
               >
                 {page}
               </Button>
@@ -142,7 +142,7 @@ function Navbar() {
 
           <Box sx={{ flexGrow: 0 }}>
           <Button variant="contained" color="primary" sx={
-          {
+          { fontFamily:"Edwin",
             background: '#9b51e0'
            }
         } onClick={()=>navigate("/booktrial")}>BOOK A FREE TRIAL</Button>

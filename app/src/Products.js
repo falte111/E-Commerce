@@ -82,7 +82,8 @@ function Products() {
               color: "white",
               padding: "8px",
               textAlign: "center",
-              fontSize:"18px"
+              fontSize:"18px",
+              fontFamily:"Edwin"
             }}>
               {product.title}
             </div>
