@@ -1,11 +1,4 @@
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Navbar from "./Navbar";
-import YoutubeEmbeded from "./YoutubeEmbed";
 import { Grid, Toolbar, Box } from "@mui/material";
 //import background from "./resource/musicbg.jpg";
 import kidplayingpiano from "./resource/kidplayingpiano.jpg"
@@ -22,6 +15,8 @@ import EmojiEmotionsSharpIcon from '@mui/icons-material/EmojiEmotionsSharp';
 import Face5SharpIcon from '@mui/icons-material/Face5Sharp';
 import ImageSlideShow from "./ImageSlideShow";
 import Footer from "./Footer"
+ 
+
 function Courses() {
   return (
     <Grid
@@ -47,7 +42,6 @@ function Courses() {
       </Grid>
       <Grid item xl={6} lg={12} md={12} sm={12} xs={12}>
         <b style={{fontSize:"30px"}}>Classical Instruments</b>
-        <p>Our school is a solution for families who would like to expose their children to the world of music!</p>
         <p>Pricing (1 hour per week):</p>
         <b>9% GST included in prices</b>
         <p>Initial/Beginner - $545.55 (13 week term) / $207.83 (monthly)</p>
@@ -112,20 +106,23 @@ function Courses() {
 {/* Edwin experience section */}
     <Grid
     container
-    spacing={0}
+    spacing={3}
     direction="row"
     alignItems="center"
     justifyContent="center">
     
-    <Grid item xl={6} lg={6} md={12} sm={12} xs={12}>
+    <Grid item xl={6} lg={6} md={12} sm={12} xs={12} >
     <img className="image" src={edwin} style={{maxwidth:"100%" , height:"auto"}}></img>
     </Grid>
     <Grid item xl={6} lg={6} md={12} sm={12} xs={12}>
-      <b style={{fontSize:"40px"}}>Edwin Choy PHD In Music</b>
-      <p style={{fontSize:"20px"}}>We aim to cultivate a lifelong passion for music in our students by providing a supportive and inspiring environment where they can explore their musical potential. Through personalized instruction and performance opportunities, we help students develop technical skills, artistic sensibility, and an appreciation for the rich tapestry of musical traditions. </p>
+      <b style={{fontSize:"40px", fontFamily:"Edwin"}}>Edwin Choy</b>
+      <br></br>
+      <b style={{fontSize:"30px", fontFamily:"Edwin"}}>Bachelor of Music in Contemporary & Popular Music and Orchestration & Composition</b>
+      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>We aim to cultivate a lifelong passion for music in our students by providing a supportive and inspiring environment where they can explore their musical potential. Through personalized instruction and performance opportunities, we help students develop technical skills, artistic sensibility, and an appreciation for the rich tapestry of musical traditions. </p>
     </Grid>
     </Grid>
 
+    <Grid><p></p></Grid>
     {/* Student Reviews section */}
     <Box sx={{ width: '100%', backgroundColor: '#9ba6a5' }}>
       <Grid container spacing={3} justifyContent="center">
@@ -307,7 +304,8 @@ function Courses() {
           </Grid> 
       </Grid>
     </Box>
-    <Grid item>
+
+    {/* <Grid item>
     <p className="whychooseus">Our Orchestral</p>
     </Grid>
     <Grid item>
@@ -321,7 +319,7 @@ function Courses() {
     <p style={{textAlign:"center", fontSize:"30px"}}>Students who study composition can see their work played by QSO, and even continue to produce their own music!</p>
       <p style={{textAlign:"center", fontSize:"30px"}}>Check out the Attack on Titan Composition by our talented student Aswin Kummaran!</p>
       <YoutubeEmbeded embedId="idTvjMJPAHQ"></YoutubeEmbeded>
-    </Grid>
+    </Grid> */}
     
     <Footer></Footer>
     <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20would%20like%20to%20find%20out%20more%20about%20the%20courses%20%20offered%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:5,right:5}} /></a>

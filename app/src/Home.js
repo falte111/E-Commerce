@@ -13,7 +13,7 @@ import orchestral1 from "./resource/orchestral1.jpg"
 import orchestral2 from "./resource/orchestral2.jpg"
 import orchestral3 from "./resource/orchestral3.jpg"
 import orchestral4 from "./resource/orchestral4.jpg"
-import edwin from "./resource/edwin.jpg"
+//import edwin from "./resource/edwin.jpg"
 import classroom from "./resource/classroom.jpg"
 import piano from "./resource/piano.jpeg"
 //import strings from "./resource/strings.jpg"
@@ -30,6 +30,8 @@ import './imagehover.css'
 import Divider from '@mui/material/Divider';
 import ImageSlideShow from "./ImageSlideShow";
 import {AnimatedOnScroll} from "react-animated-css-onscroll";
+import Font from "./Font.css"
+
 function Home() {
   const backgroundimages =[
     background,
@@ -152,7 +154,7 @@ function Home() {
           {/* https://stackoverflow.com/questions/66226603/how-to-fit-images-to-different-screen-resolutions */}
           <a href="http://localhost:3000/courses">
            {/* src= classroom */}
-          <img className="image" src={edwin} style={{maxwidth:"100%" , height:"600px"}}></img>
+          <img className="image" src={classroom} style={{maxwidth:"100%" , height:"600px"}}></img>
           <div class="middle">
     <div class="text">FIND OUT MORE!</div>
   </div>
