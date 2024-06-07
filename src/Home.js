@@ -162,7 +162,7 @@ function Home() {
           <div className="container">
           
           {/* https://stackoverflow.com/questions/66226603/how-to-fit-images-to-different-screen-resolutions */}
-          <a onClick={()=>navigate("/booktrial")} style={{cursor:"pointer"}}>
+          <a onClick={()=>navigate("/courses")} style={{cursor:"pointer"}}>
            {/* src= classroom */}
           <img className="image" src={classroom} style={{maxwidth:"100%" , height:"600px"}}></img>
           <div class="middle">
