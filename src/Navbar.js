@@ -117,7 +117,7 @@ function Navbar() {
             variant="h5"
             noWrap
             component="a"
-            href="/home"
+            onClick={()=>navigate("/booktrial")}
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },

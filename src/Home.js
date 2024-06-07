@@ -1,8 +1,4 @@
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
+
 import { Navigate, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer"
@@ -31,7 +27,8 @@ import Divider from '@mui/material/Divider';
 import ImageSlideShow from "./ImageSlideShow";
 import {AnimatedOnScroll} from "react-animated-css-onscroll";
 import Font from "./Font.css"
-
+import { styled } from '@mui/system';
+import Typography from '@mui/material/Typography';
 function Home() {
   const backgroundimages =[
     background,
@@ -107,7 +104,19 @@ function Home() {
   // };
 
 
-
+  // const ResponsiveTypography = styled(Typography)(({ theme, fontSize }) => ({
+  //   fontSize: fontSize || '16px', // Default font size
+  //   fontFamily:"Edwin",
+  //   [theme.breakpoints.up('sm')]: {
+  //     fontSize: fontSize ? `${parseFloat(fontSize) * 1.125}rem` : '1.125rem', // Adjust font size for small screens and up
+  //   },
+  //   [theme.breakpoints.up('md')]: {
+  //     fontSize: fontSize ? `${parseFloat(fontSize) * 1.25}rem` : '1.25rem', // Adjust font size for medium screens and up
+  //   },
+  //   [theme.breakpoints.up('lg')]: {
+  //     fontSize: fontSize ? `${parseFloat(fontSize) * 1.375}rem` : '1.375rem', // Adjust font size for large screens and up
+  //   },
+  // }));
 
  const buttonStyle = {
     backgroundColor:"#fff474",
@@ -153,7 +162,7 @@ function Home() {
           <div className="container">
           
           {/* https://stackoverflow.com/questions/66226603/how-to-fit-images-to-different-screen-resolutions */}
-          <a href="http://localhost:3000/courses">
+          <a onClick={()=>navigate("/booktrial")} style={{cursor:"pointer"}}>
            {/* src= classroom */}
           <img className="image" src={classroom} style={{maxwidth:"100%" , height:"600px"}}></img>
           <div class="middle">
@@ -165,7 +174,7 @@ function Home() {
         <Grid item  xl={7} lg={7} md={7} sm ={12} xs ={12}>
           <div>
             <p style={{fontSize:"30px"}}>At Quindicesima, we believe in the transformative power of music education. Music is not just an art form; it is a universal language that nurtures creativity, discipline, and emotional expression. Our commitment to music education is rooted in the understanding that learning music fosters critical thinking, enhances cognitive abilities, and builds confidence. </p>
-            <a href="http://localhost:3000/courses"><button className="buttonFindOutMore">FIND OUT MORE</button></a>
+            <button className="buttonFindOutMore" onClick={()=>navigate("/courses")}>FIND OUT MORE</button>
           </div>
 
         </Grid>
@@ -228,6 +237,7 @@ function Home() {
 </Grid>
 </AnimatedOnScroll>
 <Footer></Footer>
+{/* <ResponsiveTypography>THIS IS SPARTA!!!</ResponsiveTypography> */}
 <a aria-label="Chat on WhatsApp" href="https://wa.me/+6591124691?text=Hi%2C%20I%20am%20interested%20in%20the%20free%20trial%20lesson%20by%20Quindicesima%21"> <img alt="Chat on WhatsApp" src={whatsapplogo} style={{position:"fixed", bottom:5,right:5}} /></a>
     </div>
     
