@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Navigate, useNavigate } from "react-router-dom";
 import logo from "./resource/QLogo.png"
+import Font from "./Font.css";
 
 const pages = ["Home", "Courses", "Orchestral", "Products"];
 //const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -80,7 +81,7 @@ function Navbar() {
             >
               <MenuIcon />
             </IconButton>
-            <Menu
+            <Menu 
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -95,12 +96,16 @@ function Navbar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseWhenClickingAway}
               sx={{
+                mt: "1px", "& .MuiMenu-paper": 
+      { backgroundColor: "#302424", }, 
                 display: { xs: "block", md: "none" },
               }}
             >
+
+              {/* Page names, use this section for styling the menu item for phone screen */}
               {pages.map((page) => (
                 <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" style={{fontFamily:"Edwin" , color:"white"}}>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -112,7 +117,7 @@ function Navbar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/home"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
