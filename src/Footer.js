@@ -10,7 +10,7 @@ function Footer() {
         justifyContent="center">
 
         <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
-            <p style={{color:"white",fontSize:"22px", textAlign:"center"}}>You can find us at</p>
+            <p style={{color:"white",fontSize:"22px", textAlign:"center", fontFamily:"Edwin"}}>You can find us at</p>
         </Grid>
         <Grid container spacing={3} justifyContent="center">
         <Grid item xl={12} lg={12} md={12} sm={12} xs={12}  display="flex" justifyContent="center">
@@ -34,7 +34,7 @@ function Footer() {
         </Grid>
         </Grid>
         <Grid item>
-        <p style={{color:"white",fontSize:"22px", textAlign:"center"}}>Copyright © 2024 Quindicesima </p>
+        <p style={{color:"white",fontSize:"22px", textAlign:"center", fontFamily:"Edwin"}}>Copyright © 2024 Quindicesima </p>
         </Grid>
         </Grid>
         </Box>

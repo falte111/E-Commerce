@@ -14,7 +14,6 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Navigate, useNavigate } from "react-router-dom";
 import logo from "./resource/QLogo.png"
-import Font from "./Font.css";
 
 const pages = ["Home", "Courses", "Orchestral", "Products"];
 //const settings = ["Profile", "Account", "Dashboard", "Logout"];

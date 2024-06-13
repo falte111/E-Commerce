@@ -1,0 +1,25 @@
+/* styles.css */
+.normal {
+    font-size: 16px;
+  }
+  
+  /* Small screens (phones) */
+  @media (max-width: 576px) {
+    .normal {
+      font-size: 14px;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    .normal {
+      font-size: 18px;
+    }
+  }
+  
+  /* Large screens (desktops) */
+  @media (min-width: 993px) {
+    .normal {
+      font-size: 20px;
+    }
+  }

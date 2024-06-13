@@ -15,7 +15,7 @@ import EmojiEmotionsSharpIcon from '@mui/icons-material/EmojiEmotionsSharp';
 import Face5SharpIcon from '@mui/icons-material/Face5Sharp';
 import ImageSlideShow from "./ImageSlideShow";
 import Footer from "./Footer"
- 
+import Font from "./Font.css"
 
 function Courses() {
   return (

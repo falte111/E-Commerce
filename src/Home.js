@@ -26,9 +26,10 @@ import './imagehover.css'
 import Divider from '@mui/material/Divider';
 import ImageSlideShow from "./ImageSlideShow";
 import {AnimatedOnScroll} from "react-animated-css-onscroll";
-import Font from "./Font.css"
 import { styled } from '@mui/system';
 import Typography from '@mui/material/Typography';
+import ResponsiveFont from "./ResponsiveFont.css"
+
 function Home() {
   const backgroundimages =[
     background,
@@ -152,7 +153,7 @@ function Home() {
       <div style={{marginBottom:"100px"}}></div>
       {/* <Divider/> */}
       <AnimatedOnScroll animationIn="bounceInUp">
-      <p style={{textAlign:"center", fontSize:"50px"}}>MUSIC EDUCATION</p>
+      <p style={{textAlign:"center", fontSize:"50px" , fontFamily:"Edwin"}}>MUSIC EDUCATION</p>
       <Grid className="musiceducation-section" container  direction="row" spacing={4}
   >     
         {/* Empty grid item to push the image to the center */}
@@ -173,8 +174,8 @@ function Home() {
         </Grid>
         <Grid item  xl={7} lg={7} md={7} sm ={12} xs ={12}>
           <div>
-            <p style={{fontSize:"30px"}}>At Quindicesima, we believe in the transformative power of music education. Music is not just an art form; it is a universal language that nurtures creativity, discipline, and emotional expression. Our commitment to music education is rooted in the understanding that learning music fosters critical thinking, enhances cognitive abilities, and builds confidence. </p>
-            <button className="buttonFindOutMore" onClick={()=>navigate("/courses")}>FIND OUT MORE</button>
+            <p style={{fontSize:"30px" , fontFamily:"Edwin"}}>At Quindicesima, we believe in the transformative power of music education. Music is not just an art form; it is a universal language that nurtures creativity, discipline, and emotional expression. Our commitment to music education is rooted in the understanding that learning music fosters critical thinking, enhances cognitive abilities, and builds confidence. </p>
+            <button className="buttonFindOutMore" onClick={()=>navigate("/courses")}><span style={{fontFamily:"Edwin"}}>FIND OUT MORE</span></button>
           </div>
 
         </Grid>
@@ -189,9 +190,9 @@ function Home() {
   <div>
   {/* color:"#f07404" */}
     <Grid item>
-    <p style={{textAlign:"center", fontSize:"50px" , color:"white"}}>Quindicesima Symphonic Orchestra</p>
-    <p style={{textAlign:"center", fontSize:"25px" , color:"white"}}>Join our orchestral family to apply your learning and perform for the community! </p>
-    <p style={{textAlign:"center", fontSize:"25px" , color:"white"}}>We welcome students of all levels be it Beginner or Professional! </p>
+    <p style={{textAlign:"center", fontSize:"50px" , color:"white", fontFamily:"Edwin"}}>Quindicesima Symphonic Orchestra</p>
+    <p style={{textAlign:"center", fontSize:"25px" , color:"white", fontFamily:"Edwin"}}>Join our orchestral family to apply your learning and perform for the community! </p>
+    <p style={{textAlign:"center", fontSize:"25px" , color:"white", fontFamily:"Edwin"}}>We welcome students of all levels be it Beginner or Professional! </p>
     <div style={{textAlign:"center" , paddingBottom:"20px"}}><button className="buttonFindOutMore" onClick={()=>navigate("/orchestral")}><span style={{color:"#4f504b", fontFamily:"Edwin"}}>JOIN OUR COMMUNITY</span></button></div>
     <ImageSlideShow></ImageSlideShow>
     </Grid>
@@ -206,7 +207,7 @@ function Home() {
 <Grid className="products-section" container direction="row" justifyContent="center">
   <div>
     <Grid item>
-      <p style={{textAlign:"center", fontSize:"50px"}}>PRODUCTS</p>
+      <p style={{textAlign:"center", fontSize:"50px", fontFamily:"Edwin"}}>PRODUCTS</p>
     </Grid>
     <Grid container spacing={2}>
       {productsJson.map(product => (
