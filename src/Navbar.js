@@ -33,7 +33,12 @@ function Navbar() {
   const handleCloseNavMenu = (pagename) => {
     pagename = pagename.toLowerCase();
     console.log(pagename + "nimama")
+    if(pagename=="home"){
+      navigate("/")
+    }
+    else{
     navigate("/" + pagename);
+    }
     //setAnchorElNav(null);
   };
   const handleCloseWhenClickingAway = () => {
@@ -55,7 +60,7 @@ function Navbar() {
             variant="h6"
             noWrap
             component="a"
-            href="/home"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -116,7 +121,7 @@ function Navbar() {
             variant="h5"
             noWrap
             component="a"
-            onClick={()=>navigate("/home")}
+            onClick={()=>navigate("/")}
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
