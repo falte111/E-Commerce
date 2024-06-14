@@ -29,6 +29,34 @@
   }
 
 
+/* styles.css */
+.normalPSection {
+  font-size: 30px;
+
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .normalPSection {
+    font-size: 20px;
+
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .normalPSection {
+    font-size: 28px;
+
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 993px) {
+  .normalPSection {
+    font-size: 30px;
+  }
+}
 
 
 

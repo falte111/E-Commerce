@@ -167,14 +167,14 @@ function Home() {
            {/* src= classroom */}
           <img className="image" src={classroom} style={{maxwidth:"100%" , height:"600px"}}></img>
           <div class="middle">
-    <div class="text">FIND OUT MORE!</div>
+    <div class="text"><span style={{fontFamily:"Edwin"}}>FIND OUT MORE!</span></div>
   </div>
   </a>
           </div>
         </Grid>
         <Grid item  xl={7} lg={7} md={7} sm ={12} xs ={12}>
           <div>
-            <p style={{fontSize:"30px" , fontFamily:"Edwin"}}>At Quindicesima, we believe in the transformative power of music education. Music is not just an art form; it is a universal language that nurtures creativity, discipline, and emotional expression. Our commitment to music education is rooted in the understanding that learning music fosters critical thinking, enhances cognitive abilities, and builds confidence. </p>
+            <p className="normalPSection" style={{fontFamily:"Edwin"}}>At Quindicesima, we believe in the transformative power of music education. Music is not just an art form; it is a universal language that nurtures creativity, discipline, and emotional expression. Our commitment to music education is rooted in the understanding that learning music fosters critical thinking, enhances cognitive abilities, and builds confidence. </p>
             <button className="buttonFindOutMore" onClick={()=>navigate("/courses")}><span style={{fontFamily:"Edwin"}}>FIND OUT MORE</span></button>
           </div>
 
@@ -191,8 +191,8 @@ function Home() {
   {/* color:"#f07404" */}
     <Grid item>
     <p className="normalPHead" style={{textAlign:"center", color:"white", fontFamily:"Edwin"}}>Quindicesima Symphonic Orchestra</p>
-    <p style={{textAlign:"center", fontSize:"25px" , color:"white", fontFamily:"Edwin"}}>Join our orchestral family to apply your learning and perform for the community! </p>
-    <p style={{textAlign:"center", fontSize:"25px" , color:"white", fontFamily:"Edwin"}}>We welcome students of all levels be it Beginner or Professional! </p>
+    <p className="normalPSection" style={{textAlign:"center",  color:"white", fontFamily:"Edwin"}}>Join our orchestral family to apply your learning and perform for the community! </p>
+    <p className="normalPSection" style={{textAlign:"center",  color:"white", fontFamily:"Edwin"}}>We welcome students of all levels be it Beginner or Professional! </p>
     <div style={{textAlign:"center" , paddingBottom:"20px"}}><button className="buttonFindOutMore" onClick={()=>navigate("/orchestral")}><span style={{color:"#4f504b", fontFamily:"Edwin"}}>JOIN OUR COMMUNITY</span></button></div>
     <ImageSlideShow></ImageSlideShow>
     </Grid>
