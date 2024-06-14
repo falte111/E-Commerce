@@ -43,7 +43,48 @@
     color: #4f504b;
     font-size: 25px;
     padding: 16px 32px;
-    font-family: "Droid Sans";
+    font-family: "Edwin";
     border-radius: 25px;
     margin-top: 5px;
   }
+
+  /* Small screens (phones) */
+@media (max-width: 576px) {
+  .text {
+    background-color: #fff474;
+    color: #4f504b;
+    font-size: 20px;
+    padding: 16px 32px;
+    font-family: "Edwin";
+    border-radius: 25px;
+    margin-top: 5px;
+
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .text {
+    background-color: #fff474;
+    color: #4f504b;
+    font-size: 22px;
+    padding: 16px 32px;
+    font-family: "Edwin";
+    border-radius: 25px;
+    margin-top: 5px;
+
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 993px) {
+  .text {
+    background-color: #fff474;
+    color: #4f504b;
+    font-size: 25px;
+    padding: 16px 32px;
+    font-family: "Edwin";
+    border-radius: 25px;
+    margin-top: 5px;
+  }
+}
