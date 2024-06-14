@@ -153,7 +153,7 @@ function Home() {
       <div style={{marginBottom:"100px"}}></div>
       {/* <Divider/> */}
       <AnimatedOnScroll animationIn="bounceInUp">
-      <p style={{textAlign:"center", fontSize:"50px" , fontFamily:"Edwin"}}>MUSIC EDUCATION</p>
+      <p className="normalPHead" style={{textAlign:"center", fontFamily:"Edwin"}}>MUSIC EDUCATION</p>
       <Grid className="musiceducation-section" container  direction="row" spacing={4}
   >     
         {/* Empty grid item to push the image to the center */}
@@ -190,7 +190,7 @@ function Home() {
   <div>
   {/* color:"#f07404" */}
     <Grid item>
-    <p style={{textAlign:"center", fontSize:"50px" , color:"white", fontFamily:"Edwin"}}>Quindicesima Symphonic Orchestra</p>
+    <p className="normalPHead" style={{textAlign:"center", color:"white", fontFamily:"Edwin"}}>Quindicesima Symphonic Orchestra</p>
     <p style={{textAlign:"center", fontSize:"25px" , color:"white", fontFamily:"Edwin"}}>Join our orchestral family to apply your learning and perform for the community! </p>
     <p style={{textAlign:"center", fontSize:"25px" , color:"white", fontFamily:"Edwin"}}>We welcome students of all levels be it Beginner or Professional! </p>
     <div style={{textAlign:"center" , paddingBottom:"20px"}}><button className="buttonFindOutMore" onClick={()=>navigate("/orchestral")}><span style={{color:"#4f504b", fontFamily:"Edwin"}}>JOIN OUR COMMUNITY</span></button></div>
@@ -207,7 +207,7 @@ function Home() {
 <Grid className="products-section" container direction="row" justifyContent="center">
   <div>
     <Grid item>
-      <p style={{textAlign:"center", fontSize:"50px", fontFamily:"Edwin"}}>PRODUCTS</p>
+      <p className="normalPHead" style={{textAlign:"center", fontFamily:"Edwin"}}>PRODUCTS</p>
     </Grid>
     <Grid container spacing={2}>
       {productsJson.map(product => (
