@@ -118,7 +118,18 @@ function Courses() {
       <b style={{fontSize:"40px", fontFamily:"Edwin"}}>Edwin Choy</b>
       <br></br>
       <b style={{fontSize:"30px", fontFamily:"Edwin"}}>Bachelor of Music in Contemporary & Popular Music and Orchestration & Composition</b>
-      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>We aim to cultivate a lifelong passion for music in our students by providing a supportive and inspiring environment where they can explore their musical potential. Through personalized instruction and performance opportunities, we help students develop technical skills, artistic sensibility, and an appreciation for the rich tapestry of musical traditions. </p>
+      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>Having learnt music since the age of 3, Edwin Choy has been all about performance and teaching music to others. After graduating from Newcastle University (UK), he returned to Singapore and founded Quindicesima & Bishan Symphonic Orchestra (BSO). With skills of music Composition, Orchestration, & Arrangement, he is able to rewrite difficult scores into different levels for even beginners to play along with professional players. Every piece of music in BSO from 2015-2022, is rearranged and rewritten by Edwin. Therefore this has been effective in closing the gap between high level players and people who have not yet learnt music.
+      </p>
+      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>Through rearrangement, he is able to publicise and recruit the community, giving them the opportunity to join an orchestra. Edwin isn't only versed in Western music, but also in Oriental music from countries like China, Korea, Japan, Philippines, and many others. Thus he is also able to incorporate other instruments into BSO, and give them parts corresponding to their respective strengths.
+      </p>
+      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>Even if a member of public is interested but doesn't have an instrument, Edwin will source for the instrument of his/her choice, and provide it at cost-price. (e.g. a Clarinet for SGD$180, or a trumpet for SGD$220) Edwin then provides extremely cheap music education ($15/hr) to train the public and they are then able to participate in the orchestra after a short period of 2-4 weeks.
+      </p>
+      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>Edwin believes absolutely in music for the community, and by the community, instead of professional orchestras as he believes that music should be provided at affordable costs to the public.
+      </p>
+      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>
+      Today, Quindicesima Symphonic Orchestra (QSO) is happy and proud to have Edwin as our music director and continues to strive to achieve the goals BSO has set out to achieve. 
+      </p>
+      <i style={{fontSize:"20px", fontFamily:"Edwin"}}>"Do unto others, what you would want others to do unto you." - Edwin Choy</i>
     </Grid>
     </Grid>
 
