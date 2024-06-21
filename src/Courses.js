@@ -16,6 +16,8 @@ import Face5SharpIcon from '@mui/icons-material/Face5Sharp';
 import ImageSlideShow from "./ImageSlideShow";
 import Footer from "./Footer"
 import Font from "./Font.css"
+import ResponsiveFont from "./ResponsiveFont.css"
+
 
 function Courses() {
   return (
@@ -35,13 +37,13 @@ function Courses() {
 
     <Grid className="courses-section" container direction="row" justifyContent="center" textAlign="center">
       <Grid item lg={12} md={12} xs={12}>
-        <p style={{ textAlign: "center", fontSize: "50px" }}>OUR CLASSES</p>
+        <p className="normalPHead" style={{ textAlign: "center"}}>OUR CLASSES</p>
       </Grid>
       <Grid item xl={6} lg={12} md={12} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
         <img className="image" src={kidplayingpiano} style={{ maxWidth: "100%", height: "auto", width: "auto", maxHeight: "550px" }} />
       </Grid>
       <Grid item xl={6} lg={12} md={12} sm={12} xs={12}>
-        <b style={{fontSize:"30px"}}>Classical Instruments</b>
+        <b className="normalPSection">Classical Instruments</b>
         <p>Pricing (1 hour per week):</p>
         <b>9% GST included in prices</b>
         <p>Initial/Beginner - $545.55 (13 week term) / $207.83 (monthly)</p>
@@ -61,7 +63,7 @@ function Courses() {
         <img className="image" src={teacherorchestral} style={{ maxWidth: "100%", height: "auto", width: "825px", maxHeight: "550px" }} />
       </Grid>
       <Grid item xl={6} lg={12} md={12} sm={12} xs={12}>
-      <b style={{fontSize:"30px"}}>Contemporary & Popular Instrument Lessons</b>
+      <b className="normalPSection">Contemporary & Popular Instrument Lessons</b>
       <p>Our school is a solution for families who would like to expose their children to the world of music!</p>
       <p>Pricing (1 hour per week):</p>
       <b>9% GST included in prices</b>
@@ -82,7 +84,7 @@ function Courses() {
         <img className="image" src={musictheory} style={{ maxWidth: "100%", height: "auto", width: "auto", maxHeight: "550px" }} />
       </Grid>
       <Grid item xl={6} lg={12} md={12} sm={12} xs={12}>
-      <b style={{fontSize:"30px"}}>Academics & Tuition (monthly)</b>
+      <b className="normalPSection">Academics & Tuition (monthly)</b>
       <p>Our school is a solution for families who would like to expose their children to the world of music!</p>
       <p>Conducting - $780 </p>
       <p>Classical/Popular Music Composition - $750</p>
@@ -100,7 +102,7 @@ function Courses() {
       </Grid>      
     </Grid>
     <Grid>
-      <p className="whychooseus">Why choose us?</p>
+      <p className="normalWhyChooseUs">Why choose us?</p>
     </Grid>
 
 {/* Edwin experience section */}
@@ -115,21 +117,21 @@ function Courses() {
     <img className="image" src={edwin} style={{maxwidth:"100%" , height:"auto"}}></img>
     </Grid>
     <Grid item xl={6} lg={6} md={12} sm={12} xs={12}>
-      <b style={{fontSize:"40px", fontFamily:"Edwin"}}>Edwin Choy</b>
+      <b className="normalPHead"style={{fontFamily:"Edwin"}}>Edwin Choy</b>
       <br></br>
-      <b style={{fontSize:"30px", fontFamily:"Edwin"}}>Bachelor of Music in Contemporary & Popular Music and Orchestration & Composition</b>
-      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>Having learnt music since the age of 3, Edwin Choy has been all about performance and teaching music to others. After graduating from Newcastle University (UK), he returned to Singapore and founded Quindicesima & Bishan Symphonic Orchestra (BSO). With skills of music Composition, Orchestration, & Arrangement, he is able to rewrite difficult scores into different levels for even beginners to play along with professional players. Every piece of music in BSO from 2015-2022, is rearranged and rewritten by Edwin. Therefore this has been effective in closing the gap between high level players and people who have not yet learnt music.
+      <b className="normalPSection" style={{fontFamily:"Edwin"}}>Bachelor of Music in Contemporary & Popular Music and Orchestration & Composition</b>
+      <p className="normalPEdwinSection" style={{fontSize:"20px", fontFamily:"Edwin"}}>Having learnt music since the age of 3, Edwin Choy has been all about performance and teaching music to others. After graduating from Newcastle University (UK), he returned to Singapore and founded Quindicesima & Bishan Symphonic Orchestra (BSO). With skills of music Composition, Orchestration, & Arrangement, he is able to rewrite difficult scores into different levels for even beginners to play along with professional players. Every piece of music in BSO from 2015-2022, is rearranged and rewritten by Edwin. Therefore this has been effective in closing the gap between high level players and people who have not yet learnt music.
       </p>
-      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>Through rearrangement, he is able to publicise and recruit the community, giving them the opportunity to join an orchestra. Edwin isn't only versed in Western music, but also in Oriental music from countries like China, Korea, Japan, Philippines, and many others. Thus he is also able to incorporate other instruments into BSO, and give them parts corresponding to their respective strengths.
+      <p className="normalPEdwinSection" style={{ fontFamily:"Edwin"}}>Through rearrangement, he is able to publicise and recruit the community, giving them the opportunity to join an orchestra. Edwin isn't only versed in Western music, but also in Oriental music from countries like China, Korea, Japan, Philippines, and many others. Thus he is also able to incorporate other instruments into BSO, and give them parts corresponding to their respective strengths.
       </p>
-      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>Even if a member of public is interested but doesn't have an instrument, Edwin will source for the instrument of his/her choice, and provide it at cost-price. (e.g. a Clarinet for SGD$180, or a trumpet for SGD$220) Edwin then provides extremely cheap music education ($15/hr) to train the public and they are then able to participate in the orchestra after a short period of 2-4 weeks.
+      <p className="normalPEdwinSection" style={{fontFamily:"Edwin"}}>Even if a member of public is interested but doesn't have an instrument, Edwin will source for the instrument of his/her choice, and provide it at cost-price. (e.g. a Clarinet for SGD$180, or a trumpet for SGD$220) Edwin then provides extremely cheap music education ($15/hr) to train the public and they are then able to participate in the orchestra after a short period of 2-4 weeks.
       </p>
-      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>Edwin believes absolutely in music for the community, and by the community, instead of professional orchestras as he believes that music should be provided at affordable costs to the public.
+      <p className="normalPEdwinSection" style={{fontFamily:"Edwin"}}>Edwin believes absolutely in music for the community, and by the community, instead of professional orchestras as he believes that music should be provided at affordable costs to the public.
       </p>
-      <p style={{fontSize:"20px", fontFamily:"Edwin"}}>
+      <p className="normalPEdwinSection" style={{ fontFamily:"Edwin"}}>
       Today, Quindicesima Symphonic Orchestra (QSO) is happy and proud to have Edwin as our music director and continues to strive to achieve the goals BSO has set out to achieve. 
       </p>
-      <i style={{fontSize:"20px", fontFamily:"Edwin"}}>"Do unto others, what you would want others to do unto you." - Edwin Choy</i>
+      <i className="normalPEdwinSection" style={{fontFamily:"Edwin"}}>"Do unto others, what you would want others to do unto you." - Edwin Choy</i>
     </Grid>
     </Grid>
 
